@@ -1,6 +1,6 @@
 body {
+    max-width: 800px;
     margin:0 auto;
-    color: whitesmoke;
 }
 
 h1, h2 {
@@ -8,17 +8,21 @@ h1, h2 {
 }
 
 img {
+    align-content: center;
+    justify-content: center;
     max-width: 200px;
-    max-height: 340px;
+    max-height: 500px;
 }
 
 header {
     flex: 2;
+    align-content: center;
     justify-content: center;
     background-color: cornflowerblue;
 }
 
 nav ul li {
+    justify-content: center;
     margin-bottom: 5px;
     margin-top: 5px;
 }
