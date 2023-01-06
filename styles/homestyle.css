@@ -1,6 +1,6 @@
 body {
+    margin:0 auto;
     color: whitesmoke;
-    align-content: center;
 }
 
 h1, h2 {
@@ -15,13 +15,15 @@ img {
 header {
     flex: 2;
     justify-content: center;
+    background-color: cornflowerblue;
 }
 
-nav {
+nav ul li {
     margin-bottom: 5px;
     margin-top: 5px;
 }
 
 footer {
     text-align: center;
+    background-color: cornflowerblue;
 }
