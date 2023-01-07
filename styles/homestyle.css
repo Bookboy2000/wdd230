@@ -10,6 +10,7 @@ h1, h2 {
 h1 {
     flex: auto;
     margin: 8px;
+    padding-top: 8px;
 }
 
 img {
