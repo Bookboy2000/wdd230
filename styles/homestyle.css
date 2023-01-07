@@ -9,6 +9,7 @@ h1, h2 {
 
 h1 {
     flex: auto;
+    margin: 8px;
 }
 
 img {
@@ -31,6 +32,7 @@ nav ul li {
     justify-content: center;
     margin-bottom: 5px;
     margin-top: 5px;
+    font-size: medium;
 }
 
 footer {
