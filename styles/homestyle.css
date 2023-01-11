@@ -4,6 +4,10 @@ body {
     margin:0 auto;
 }
 
+h1 {
+    text-justify: center;
+}
+
 h1, h2 {
     text-align: center;
 }
