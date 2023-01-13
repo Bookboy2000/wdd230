@@ -17,7 +17,7 @@ h3, h4, h5 {
 
 header {
     text-align: center;
-    background-color: darkturquoise;
+    background-color: burlywood;
 }
 
 main {
@@ -26,7 +26,7 @@ main {
     grid-gap: 10px;
     max-width: 500px;
     margin: 0 auto;
-    background-color: royalblue;
+    background-color: burlywood;
 }
 
 .griditem1 {
@@ -53,6 +53,6 @@ img {
 
 footer {
     text-align: center;
-    background-color: darkturquoise;
+    background-color: burlywood;
     min-height: 60px;
 }
