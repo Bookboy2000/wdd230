@@ -1,0 +1,19 @@
+@media only screen and (min-width: 37.5em) {
+    
+    main {
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+    }
+
+    .griditem1 {
+        grid-column: 1/2;
+    }
+
+    .griditem2 {
+        grid-column: 2/3;
+    }
+
+    .griditem3 {
+        grid-column: 1/3;
+    }
+}

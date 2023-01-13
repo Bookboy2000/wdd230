@@ -1,15 +1,60 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    max-width: 800px;
+    max-width: fit-content;
     margin:0 auto;
 }
 
 h1, h2 {
     text-align: center;
-    color: blueviolet;
+    color: rgb(0, 0, 0);
+}
+
+h3, h4, h5 {
+    font-size: 1.5em;
+    background-color: royalblue;
+    margin: auto;
 }
 
 header {
-    background-color: darkorange;
-    color: black;
+    display: block;
+    align-content: center;
+    background-color: darkturquoise;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: royalblue;
+}
+
+.griditem1 {
+    background-color: darkturquoise;
+    margin: 10px;
+}
+
+.griditem2 {
+    background-color: darkturquoise;
+    margin: 10px;
+}
+
+.griditem3 {
+    background-color: darkturquoise;
+    margin: 10px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: darkturquoise;
+    min-height: 60px;
 }
