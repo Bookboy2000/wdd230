@@ -1,7 +1,7 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
     max-width: fit-content;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 h1, h2 {
@@ -12,7 +12,17 @@ h1, h2 {
 h3, h4, h5 {
     font-size: 1.5em;
     background-color: royalblue;
-    margin: auto;
+    margin: 10px;
+    line-height: 35px;
+}
+
+p {
+    margin: 10px;
+}
+
+a {
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 header {
@@ -27,6 +37,13 @@ main {
     max-width: 500px;
     margin: 0 auto;
     background-color: burlywood;
+}
+
+section {
+    border-style: solid;
+    border-width: 5px;
+    border-color: royalblue;
+    border-radius: 10px;
 }
 
 .griditem1 {
