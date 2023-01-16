@@ -6,21 +6,19 @@ body {
 
 h1 {
     text-justify: center;
+    flex: 50%;
+    margin: 8px;
+    padding-top: 8px;
 }
 
 h1, h2 {
     text-align: center;
 }
 
-h1 {
-    flex: auto;
-    margin: 8px;
-    padding-top: 8px;
-}
 
 img {
     flex: auto;
-    align-content: center;
+    text-align: center;
     justify-content: center;
     max-width: 200px;
     max-height: 500px;

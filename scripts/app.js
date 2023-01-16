@@ -1,5 +1,5 @@
 const year = document.querySelector("#year");
-const lasttime = document.querySelector("#lasttime");
+const lasttime = document.querySelector("#last_time");
 
 
 const options = {year: "numeric"}
