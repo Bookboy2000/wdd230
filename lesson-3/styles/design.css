@@ -1,6 +1,16 @@
 body {
     max-width: 960px;
     margin: 0 auto;
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.3em;
+}
+
+h1, h2, h3 {
+    color: #A6C0DE;
+}
+
+h1 {
+    font-size: 45px;
 }
 
 nav {
@@ -15,4 +25,73 @@ nav {
 
 nav a {
     display: block;
+    font-size: 20px;
+    padding: 10px;
+    padding-right: 48px;
+    text-decoration: none;
+    color: #F7D52B;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #062726;
+    text-align: center;
+}
+
+header {
+    padding-top: 12px;
+    text-align: center;
+    background-color: #654730;
+}
+
+h2, h3 {
+    font-size: 25px;
+    max-width: 200px;
+    background-color: #654730;
+    padding: 15px;
+    text-align: center;
+}
+
+.para_1 {
+    padding: 15px;
+    max-width: 150px;
+    text-align: center;
+    background-color: #654730;
+    color: white;
+}
+
+.para_2 {
+    padding: 15px;
+    max-width: 150px;
+    text-align: center;
+    background-color: #062726;
+    color: white;
+}
+
+.para_3 {
+    padding: 15px;
+    max-width: 150px;
+    text-align: center;
+    background-color: #A6C0DE;
+    color: black;
+}
+
+.para_4 {
+    padding: 15px;
+    max-width: 150px;
+    text-align: center;
+    background-color: #F7D52B;
+    color: black;
+}
+
+p {
+    font-size: 18px;
+}
+
+footer {
+    padding: 15px;
+    min-height: 50px;
+    text-align: center;
+    background-color: #654730;
+    color: #A6C0DE;
 }

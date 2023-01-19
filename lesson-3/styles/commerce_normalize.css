@@ -41,6 +41,14 @@
     font-size: 2em;
     margin: 0.67em 0;
   }
+
+  /**
+  This line height is better for the font I chose.
+  */
+
+  p, li {
+    line-height: 1.3em;
+  }
   
   /* Grouping content
      ========================================================================== */
