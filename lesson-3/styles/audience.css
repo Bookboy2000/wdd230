@@ -9,16 +9,17 @@ h1, h2, h5 {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 30px;
 }
 
 nav {
     text-align: center;
     display: flex;
     flex-direction: column;
+    background-color: #062726;
 }
 
-.menu {
+nav div {
     flex: 1 1 auto;
 }
 
@@ -26,15 +27,8 @@ nav a {
     display: block;
     font-size: 20px;
     padding: 10px;
-    padding-right: 48px;
     text-decoration: none;
     color: #F7D52B;
-}
-
-nav ul {
-    list-style-type: none;
-    background-color: #062726;
-    text-align: center;
 }
 
 header {
@@ -44,8 +38,8 @@ header {
 }
 
 .persona h2 {
-    font-size: 25px;
     max-width: 200px;
+    font-size: 22px;
     background-color: #654730;
     padding: 15px;
     text-align: center;
@@ -60,9 +54,9 @@ h3, h4 {
 }
 
 .scenario h5 {
+    font-size: 22px;
     margin-bottom: -5px;
     margin-top: 50px;
-    font-size: 25px;
     max-width: 200px;
     background-color: #654730;
     padding: 15px;
@@ -88,4 +82,8 @@ footer {
     text-align: center;
     background-color: #654730;
     color: #A6C0DE;
+}
+
+footer p {
+    font-size: 15px;
 }
