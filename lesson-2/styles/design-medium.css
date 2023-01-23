@@ -5,15 +5,15 @@
         max-width: 800px;
     }
 
-    .griditem1 {
+    .grid-item1 {
         grid-column: 1/2;
     }
 
-    .griditem2 {
+    .grid-item2 {
         grid-column: 2/3;
     }
 
-    .griditem3 {
+    .grid-item3 {
         grid-column: 1/3;
     }
 
