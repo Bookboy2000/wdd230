@@ -45,7 +45,6 @@ nav button {
 
 .menu li a {
     display: none;
-    
 }
 
 .open li a {
@@ -62,11 +61,12 @@ main div {
 }
 
 .spotlights {
+    padding: 0;
     display: flex;
 }
 
 .spotlights div {
-    padding: 0;
+    padding: 30px;
     background-color: gray;
     flex: 1 1 auto;
 }
@@ -81,6 +81,10 @@ footer img {
 
 footer p, footer li {
     color: #A6C0DE;
+}
+
+footer p {
+    text-align: center;
 }
 
 footer a {
