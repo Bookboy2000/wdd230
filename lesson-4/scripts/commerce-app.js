@@ -4,14 +4,14 @@ const lastTime = document.querySelector("#last-time");
 
 const options = {year: "numeric"}
    
-year.innerHTML = new Date().toLocaleDateString("en-UK", options);
+year.innerHTML = new Date().toLocaleDateString("en-US", options);
 
 lastTime.innerHTML =  new Date(document.lastModified);
 
 function toggleNav() {
-    document.getElementsByClassName("menu").classList.toggle("open");
-    document.getElementsByClassName("hamburger").classList.toggle("new");
+    document.getElementById("menu").classList.toggle("open");
+    document.getElementById("hamburger").classList.toggle("new");
 }
 
-const x = document.getElementsByClassName("hamburger")
+const x = document.getElementById('hamburger')
 x.onclick = toggleNav();
