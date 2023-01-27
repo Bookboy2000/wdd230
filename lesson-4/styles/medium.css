@@ -3,18 +3,33 @@
     /* Header */
 
     header img {
-        max-width: 350px;
+        max-height: 175px;
     }
 
-    .menu {
+    h1 {
+        font-size: 40px;
+    }
+
+    .social-links img {
+        padding-top: 0;
+        margin: 5px;
+        max-width: 65px;
+    }
+
+    .burger-date p {
+        font-size: 1em;
+    }
+
+    #menu {
         display: flex;
+        text-align: center;
     }
 
-    nav button {
+    #hamburger {
         display: none;
     }
 
-    .menu li a {
+    #menu li a {
         flex-direction: row;
         flex: 1 1 auto;
         display: block;
@@ -54,7 +69,12 @@
 
     /* Footer */
 
-    footer img {
-        max-width: 250px;
+    .bottom-bar img {
+        max-width: 150px;
+        margin: 5px;
+    }
+
+    .bottom-bar li {
+        font-size: 25px;
     }
 }
