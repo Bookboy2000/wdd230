@@ -49,13 +49,25 @@ nav button {
 }
 
 .burger-date {
-    display: flex;
+    display: grid;
+    grid-template-columns: 12% 88%;
 }
 
 .burger-date p {
     align-self: center;
-    justify-self: right;
+    justify-self: left;
     margin-left: 10px;
+    color: #c0cedd;
+}
+
+.fix-date {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.fix-date p {
+    align-self: center;
+    margin-left: 5px;
     font-size: .7em;
 }
 
@@ -63,12 +75,24 @@ nav button {
     display: block;
 }
 
-#menu {
+#menu li {
     display: none;
+}
+
+#menu li:first-child {
+    display: block;
 }
 
 #menu li {
     flex: 1 1 auto;
+}
+
+ul#menu.open {
+    display: block;
+}
+
+ul#menu.open li {
+    display: block;
 }
 
 .open li a {
@@ -100,7 +124,7 @@ footer {
 }
 
 footer p, footer li {
-    color: #A6C0DE;
+    color: #c0cedd;
 }
 
 footer p {
@@ -132,3 +156,9 @@ footer a {
     padding: 0;
     text-align: center;
 }
+
+#hamburger span:nth-child(1) {display: block;}
+#hamburger span:nth-child(2) {display: none;}
+
+#hamburger.new span:nth-child(1) {display: none;}
+#hamburger.new span:nth-child(2) {display: block;}

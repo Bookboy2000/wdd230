@@ -16,13 +16,27 @@
         max-width: 65px;
     }
 
+    .burger-date {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .burger-date p {
         font-size: 1em;
+        align-self: flex-start;
     }
 
     #menu {
         display: flex;
         text-align: center;
+    }
+
+    #menu li {
+        display: block;
+    }
+
+    #menu li:first-child {
+        display: none;
     }
 
     #hamburger {
