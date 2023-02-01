@@ -109,18 +109,18 @@ ul#menu.open li {
     background-color: #0a4240;
 }
 
+
+/* Main css small */
+
 main div {
     background-color: #9b7253;
     padding: 30px;
     margin: 10px;
 }
 
-/* .hero {
-    display: flex;
-    font-size: 18px;
-} */
 
 .hero {
+    
     background-image: url("images/st-george-dusk.jpg");
     text-align: center;
     font-size: 20px;
@@ -136,14 +136,9 @@ main div {
     margin: 10px;
 }
 
-/* main button {
-    border: none;
-    background-color: #062726;
-    color: #F7D52B;
-    padding: 30px;
-    margin: 10px;
-    border-radius: 20px;
-} */
+.hero button:hover {
+    background-color: #0a4240;
+}
 
 main button a {
     text-decoration: none;
@@ -154,13 +149,31 @@ main button a {
     display: none;
 }
 
+.event {
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.event h2 {
+    font-size: 25px;
+    color: #F7D52B;
+    text-shadow: 2px 2px 5px black;
+}
+
+.event a {
+    color: rgb(40, 40, 175);
+}
+
 .weather {
+    padding: 20px;
     display: flex;
     justify-content: center;
 }
 
 .weather img {
-    max-height: fit-content;
+    max-height: 95px;
+    max-width: 95px;
     flex: auto;
 }
 
@@ -172,9 +185,17 @@ main button a {
 }
 
 .news {
+    padding: 20px;
     text-align: center;
     font-size: 18px;
 }
+
+.news h3 {
+    font-size: 25px;
+    color: #F7D52B;
+    text-shadow: 2px 2px 5px black;
+}
+
 
 .spotlights {
     padding: 0;
@@ -182,9 +203,22 @@ main button a {
 }
 
 .spotlights div {
-    padding: 30px;
-    background-color: gray;
+    padding: 5px;
+    background-color: #9b7253;
     flex: 1 1 auto;
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+}
+
+.spotlights div h4, h5 {
+    font-size: 25px;
+    color: #F7D52B;
+    text-shadow: 2px 2px 5px black;
+    margin: 15px;
+}
+
+.first-para {
+    border-bottom: 1px solid black;
 }
 
 footer {

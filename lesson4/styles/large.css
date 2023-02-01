@@ -25,6 +25,10 @@ main button {
     border-radius: 20px;
 }
 
+main button:hover {
+    background-color: #0a4240;
+}
+
 
     /* Main grid layout */
 
