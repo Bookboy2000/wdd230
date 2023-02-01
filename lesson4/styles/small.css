@@ -75,6 +75,7 @@ nav button {
 
 #hamburger {
     display: block;
+    padding-left: 10px;
 }
 
 #menu li {
@@ -104,10 +105,75 @@ ul#menu.open li {
     padding: 10px;
 }
 
+.open li a:hover {
+    background-color: #0a4240;
+}
+
 main div {
-    background-color: #eee;
+    background-color: #9b7253;
     padding: 30px;
     margin: 10px;
+}
+
+/* .hero {
+    display: flex;
+    font-size: 18px;
+} */
+
+.hero {
+    background-image: url("images/st-george-dusk.jpg");
+    text-align: center;
+    font-size: 20px;
+}
+
+.hero button {
+    background-color: #062726;
+    color: #F7D52B;
+    font-size: 25px;
+    border: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* main button {
+    border: none;
+    background-color: #062726;
+    color: #F7D52B;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+} */
+
+main button a {
+    text-decoration: none;
+    color: #F7D52B;
+}
+
+.join {
+    display: none;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+}
+
+.weather img {
+    max-height: fit-content;
+    flex: auto;
+}
+
+.weather p {
+    font-size: 22px;
+    text-align: center;
+    align-self: center;
+    flex: auto;
+}
+
+.news {
+    text-align: center;
+    font-size: 18px;
 }
 
 .spotlights {

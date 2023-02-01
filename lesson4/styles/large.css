@@ -9,6 +9,23 @@
     }
 
 
+    /* Main css */
+
+.hero {
+    display: flex;
+    font-size: 18px;
+}
+
+main button {
+    border: none;
+    background-color: #062726;
+    color: #F7D52B;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
     /* Main grid layout */
 
     .mid-layout {

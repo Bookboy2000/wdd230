@@ -52,10 +52,20 @@
         text-decoration: none;
         color: #F7D52B;
     }
+
+    #menu li a:hover {
+        background-color: #0a4240;
+    }
+
+
+    /* Main styles */
+
+    .join {
+        display: block;
+    }
     
 
     /* Main grid layout */
-
 
     .mid-layout {
         display: grid;
