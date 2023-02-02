@@ -60,8 +60,65 @@
 
     /* Main styles */
 
+
+    main div {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 25px;
+        margin: 15px 0px;
+    }
+
+    .hero a {
+        font-size: 35px;
+    }
+
+    .news {
+        font-size: 20px;
+    }
+
+    .weather {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wind-para {
+        display: block;
+    }
+
+    .cloud-wind, .wind-para {
+        display: block;
+        margin: 0;
+        padding-top: 10px;
+        border-top: 1px solid black;
+    }
+
+    .separator {
+        display: none;
+    }
+
     .join {
         display: block;
+        font-size: 20px;
+    }
+
+    .join b {
+        font-size: 25px;
+    }
+
+    main button {
+        border: none;
+        background-color: #062726;
+        color: #F7D52B;
+        padding: 30px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    
+    main button:hover {
+        background-color: #0a4240;
     }
     
 

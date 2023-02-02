@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 56em) {
 
     header img {
         max-height: 200px;
@@ -12,21 +12,49 @@
     /* Main css */
 
 .hero {
-    display: flex;
-    font-size: 18px;
+    text-align: left;
 }
 
-main button {
-    border: none;
-    background-color: #062726;
-    color: #F7D52B;
-    padding: 30px;
-    margin: 10px;
-    border-radius: 20px;
+.hero button {
+    position: relative;
+    top: 170px;
+    left: 360px;
 }
 
-main button:hover {
-    background-color: #0a4240;
+.event {
+    padding: 10px;
+}
+
+.event h2 {
+    margin: 5px 0px;
+}
+
+.sm-mid-para {
+    display: none;
+}
+
+.large-para {
+    display: block;
+}
+
+.weather {
+    padding: 5px;
+}
+
+.weather p {
+    padding: 0px;
+}
+
+.news h3, p {
+    margin: 15px 0px;
+}
+
+.spotlights h4, h5 {
+    margin: 0;
+}
+
+.spotlights p {
+    margin: 0;
 }
 
 
