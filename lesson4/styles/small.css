@@ -125,6 +125,7 @@ main div {
     background-color: #9b7253;
     padding: 30px;
     margin: 10px;
+    border: 2px solid black;
 }
 
 
@@ -224,6 +225,7 @@ main button a {
     flex: 1 1 auto;
     box-shadow: 2px 2px 5px black;
     text-align: center;
+    border: none;
 }
 
 .spotlights h4, h5 {
