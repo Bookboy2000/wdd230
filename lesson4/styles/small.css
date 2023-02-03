@@ -29,6 +29,18 @@ h1 {
     color: #A6C0DE;
 }
 
+h2 {
+    font-size: 22px;
+    color: #ffe560;
+    text-shadow: 2px 2px 5px black;
+}
+
+h3, h4, h5 {
+    font-size: 25px;
+    color: #ffe560;
+    text-shadow: 2px 2px 5px black;
+}
+
 .top-bar {
     display: flex;
     align-items: center;
@@ -164,14 +176,8 @@ main button a {
     font-size: 18px;
 }
 
-.event h2 {
-    font-size: 25px;
-    color: #F7D52B;
-    text-shadow: 2px 2px 5px black;
-}
-
 .event a {
-    color: rgb(40, 40, 175);
+    color: rgb(1, 1, 63);
 }
 
 .large-para {
@@ -207,13 +213,6 @@ main button a {
     font-size: 18px;
 }
 
-.news h3 {
-    font-size: 25px;
-    color: #F7D52B;
-    text-shadow: 2px 2px 5px black;
-}
-
-
 .spotlights {
     padding: 0;
     display: flex;
@@ -229,9 +228,6 @@ main button a {
 }
 
 .spotlights h4, h5 {
-    font-size: 25px;
-    color: #F7D52B;
-    text-shadow: 2px 2px 5px black;
     margin: 15px;
 }
 
