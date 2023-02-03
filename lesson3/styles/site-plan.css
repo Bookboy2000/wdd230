@@ -4,7 +4,7 @@ body {
     font-family: 'Source Serif Pro', serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #A6C0DE;
 }
 
@@ -37,7 +37,7 @@ header {
     background-color: #654730;
 }
 
-main h2, main h3 {
+main h2, main h3, main h4 {
     font-size: 22px;
     max-width: 200px;
     background-color: #654730;
