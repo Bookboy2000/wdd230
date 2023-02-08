@@ -7,7 +7,7 @@
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .social-links img {
@@ -16,47 +16,17 @@
         max-width: 65px;
     }
 
-    .burger-date {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .burger-date p {
-        font-size: 1em;
-        align-self: flex-start;
-    }
-
     #menu {
-        display: flex;
-        text-align: center;
-    }
-
-    #menu li {
-        display: block;
-    }
-
-    #menu li:first-child {
-        display: none;
+        font-size: 25px;
     }
 
     #hamburger {
-        display: none;
+        font-size: 50px;
     }
 
-    #menu li a {
-        flex-direction: row;
-        flex: 1 1 auto;
-        display: block;
-        padding: 18px;
-        font-size: 1.5em;
-        text-decoration: none;
-        color: #F7D52B;
+    #current {
+        font-size: 1.3em;
     }
-
-    #menu li a:hover {
-        background-color: #0a4240;
-    }
-
 
     /* Main styles */
 
