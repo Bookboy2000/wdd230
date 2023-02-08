@@ -72,6 +72,10 @@
         padding: 10px;
     }
 
+    .event p {
+        font-size: 1em;
+    }
+
     .event h2 {
         margin: 5px 0px;
     }
@@ -88,8 +92,18 @@
         padding: 5px;
     }
 
+    .weather img {
+        max-width: 57px;
+        max-height: 57px;
+    }
+
     .weather p {
         padding: 0px;
+        font-size: .9em;
+    }
+
+    .weather .weather-para {
+        margin: 0px;
     }
 
     .news h3, p {

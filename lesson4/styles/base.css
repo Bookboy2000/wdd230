@@ -196,6 +196,7 @@ main div {
 .weather {
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -206,14 +207,11 @@ main div {
 }
 
 .weather p {
+    margin: 15px 0px;
     font-size: 22px;
     text-align: center;
     align-self: center;
     flex: auto;
-}
-
-.wind-para {
-    display: none;
 }
 
 .news {

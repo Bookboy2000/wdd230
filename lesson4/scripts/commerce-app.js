@@ -45,7 +45,6 @@ let parent = header.parentNode;
 // 'August 19, 1975 23:15:30' <-- This can be used to test the function below to see if it checks against "day" properly
 const newday = new Date()
 const day = newday.getDay()
-console.log(day)
 
 popUp.textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
 

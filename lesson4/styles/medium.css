@@ -48,17 +48,16 @@
         font-size: 20px;
     }
 
+    .event p {
+        font-size: 1.5em;
+    }
+
     .weather {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .wind-para {
-        display: block;
-    }
-
-    .cloud-wind, .wind-para {
-        display: block;
+    .weather-para {
         margin: 0;
         padding-top: 10px;
         border-top: 1px solid black;
