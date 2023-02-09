@@ -139,7 +139,7 @@ main div {
 }
 
 .hero {
-    background-image: url("../images/rsz_st-george-3.jpg");
+    /* background-image: url("../images/rsz_st-george-3.jpg"); */
     text-align: center;
     font-size: 20px;
 }
