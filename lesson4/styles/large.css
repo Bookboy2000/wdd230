@@ -106,6 +106,10 @@
         margin: 0px;
     }
 
+    .news {
+        padding: 15px 20px 20px 20px;
+    }
+
     .news h3, p {
         margin: 15px 0px;
     }
