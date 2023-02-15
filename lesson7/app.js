@@ -7,9 +7,10 @@ const loadImages = (image) => {
     };
 };
 
-imagesToLoad.forEach((img) => {
-    loadImages(img);
-});
+const imageOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px 50px 0px"
+};
 
 if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((items, observer) => {
@@ -19,7 +20,7 @@ if ("IntersectionObserver" in window) {
                 observer.unobserve(item.target)
             }
         });
-    });
+    }, imageOptions);
     imagesToLoad.forEach((img) => {
         observer.observe(img);
     });
@@ -27,5 +28,5 @@ if ("IntersectionObserver" in window) {
     imagesToLoad.forEach((img) => {
         loadImages(img);
     });
-}
+};
   
