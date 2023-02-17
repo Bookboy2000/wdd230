@@ -123,6 +123,13 @@
     }
 
 
+    /* Discover page main css */
+
+    .discovery-main h2 {
+        font-size: 35px;
+    }
+
+
     /* Main grid layout */
 
     .mid-layout {

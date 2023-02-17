@@ -268,7 +268,7 @@ main div {
 .discovery-main h2 {
     font-size: 25px;
     color: #F7D52B;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 3px 3px 5px black;
     text-align: center;
 }
 
@@ -282,7 +282,7 @@ main div {
     margin: 20px;
 }
 
-.discovery-main picture img {
+.discovery-main img {
     width: 100%;
     border: 4px double black;
 }

@@ -89,7 +89,13 @@
     main button:hover {
         background-color: #0a4240;
     }
+
+
+    /* Discover page main css */
     
+    .discovery-main h2 {
+        font-size: 30px;
+    }
 
     /* Main grid layout */
 
