@@ -278,6 +278,10 @@ main div {
     margin: 5px;
 }
 
+#visit {
+    margin: 20px;
+}
+
 .discovery-main picture img {
     width: 100%;
     border: 4px double black;

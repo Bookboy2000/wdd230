@@ -1,15 +1,19 @@
-let imagesToLoad = document.querySelectorAll('img[data-src]');
 
-const loadImages = (image) => {
-    image.setAttribute('src', image.getAttribute('data-src'));
-    image.onload = () => {
-        image.removeAttribute('data-src');
+let visit = document.querySelector('#visit');
+
+let today = Date.now();
+
+localStorage.setItem("oldDate", today);
+
+let oldDate = localStorage.getItem("oldDate")
+
+function compareDate() {
+    if (oldDate != "") {
+        let outcome = (oldDate - today) / 84600000;
+        let rounded = Math.round(outcome);
+        visit.textContent = "It has been " + rounded + " days since you were here.";
+        console.log(rounded);
     };
 };
-imagesToLoad.forEach((img) => {
-    loadImages(img);
-});
 
-
-const visit = document.querySelector('#visit')
-
+compareDate();
