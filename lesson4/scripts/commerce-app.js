@@ -25,7 +25,6 @@ function toggleNav() {
         document.querySelector(".test").classList.add("fix-date")
         document.querySelector(".test").classList.remove("burger-date")
     } else{
-        console.log("hello")
         document.querySelector(".test").classList.add("burger-date")
         document.querySelector(".test").classList.remove("fix-date")
     }
@@ -43,8 +42,8 @@ let parent = header.parentNode;
 
 
 // 'August 19, 1975 23:15:30' <-- This can be used to test the function below to see if it checks against "day" properly
-const newday = new Date()
-const day = newday.getDay()
+const newday = new Date();
+const day = newday.getDay();
 
 popUp.textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
 
@@ -52,7 +51,7 @@ function testDay() {
     if (day == '1' || day == '2') {
         parent.insertBefore(popUp, header);
     } else {
-    }
-}
+    };
+};
 
 testDay();

@@ -97,6 +97,10 @@
         font-size: 30px;
     }
 
+    .discovery-main img:hover {
+        background-color: #0a4240;
+    }
+
     /* Main grid layout */
 
     .mid-layout {
