@@ -30,7 +30,7 @@ h1 {
     color: #A6C0DE;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, h6 {
     font-size: 25px;
     color: #ffe560;
     text-shadow: 2px 2px 5px black;
@@ -297,6 +297,60 @@ main div {
 
 .discovery-main p {
     text-align: center;
+}
+
+
+/* Join Page main css */
+
+
+.join-main h2 {
+    color: #ffe047;
+    font-size: 30px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.join-main h3, .join-main h4, .join-main h5, .join-main h6 {
+    margin: 10px 10px 10px 10px;
+}
+
+.join-grid-1, .join-grid-3, .join-grid-3 div {
+    background-color: transparent;
+    border: none;
+}
+
+.non-profit {
+    border: 7px solid rgb(57, 57, 57);
+}
+
+.bronze {
+    border: 7px solid rgb(165, 82, 34);
+}
+
+.silver {
+    border: 7px solid #bfddff;
+}
+
+.gold {
+    border: 7px solid gold;
+}
+
+fieldset {
+    background-color: #9b7253;
+    border: none;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input, textarea {
+    background-color: rgb(200, 198, 198);
+}
+
+.required input {
+    border: 1px solid red;
 }
 
 

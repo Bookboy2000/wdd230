@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>St. George Chamber of Commerce</title>
+        <title>Join The Chamber</title>
         <meta name="description" content="Chamber of Commerce">
         <link rel="stylesheet" href="styles/commerce-normalize.css">
         <link rel="stylesheet" href="styles/base.css">
@@ -27,7 +27,7 @@
                         <li><button id="hamburger"><span>&#9776;</span><span>X</span></button></li>
                         <li><a href="discover.html">Discover</a></li>
                         <li><a href="#">Directory</a></li>
-                        <li><a href="join.html">Join</a></li>
+                        <li><a href="#">Join</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                     <p id="current"></p>
@@ -42,47 +42,52 @@
                 </div>
             </nav>
         </header>
-        <main class="mid-layout">
-            <div class="hero">
-                <picture>
-                    <source srcset="images/st-george-3-medium.webp" media="(min-width: 520px) and (max-width: 895.9px)">
-                    <source srcset="images/rsz-st-george-3.webp" media="(min-width: 896px)">
-                    <img src="images/st-george-3-small.webp" alt="school assigned image">
-                </picture>
-                <!-- <p>The Chamber could use someone like you. Be the next success story!</p>
-                <a href="#">Join Us!</a> -->
-            </div>
-            <div class="event">
-                <h2>Charity Drive</h2>
-                <p class="sm-mid-para">Please help!<br>Bring your old/unused clothes to the St. George Chamber of Commerce building at
-                    <a href="https://goo.gl/maps/Fbgo7eXwY7gnGecFA">## Totallyreal Rd. St. George UT</a> to help out the unfortunate</p>
-                <p class="large-para">Bring clothes to the C of C building&#160;<a href="#"><br>More info...</a></p>
-            </div>
-            <div class="weather">
-                <img src="images/cloudy-day.png" alt="A bright sun peeking over a cloud">
-                <p><span id="temp">48</span>&#8457;</p>
-                <p class="separator">|<br>|</p>
-                <p class="weather-para"> Partly Cloudy</p>
-                <p class="weather-para">Wind speed: <span id="speed">4</span>mph</p>
-                <p class="weather-para">Wind Chill: <span id="chill">N/A</span>&#8457;</p>
-            </div>
-            <div class="news">
-                <h3>News Release</h3>
-                <p>Brother Farnsworth and Sister Lofgran have been knighted by the king and named as heirs to the rich Prince Worcestershire of Wales!</p>
-            </div>
-            <a class="join" href="#"><b>Join us</b>&#160;to improve your advertising reach!</a>   
-            <div class="spotlights">
-                <div>
-                    <h4>Tonka Movers</h4>
-                    <img src="images/dump-truck.png" alt="A brightly colored dump-truck">
-                    <p class="first-para">"Be Tonka Tough!"</p>
-                    <p>###-###-####<br>-------<br>website.com</p>
+        <main class="join-main">
+            <div class="join-grid-1">
+                <div class="non-profit">
+                    <h3>Non-Profit Tier</h3>
+                    <p></p>
                 </div>
+                <div class="bronze">
+                    <h4>Bronze Tier</h4>
+                    <p></p>
+                </div>
+                <div class="silver">
+                    <h5>Silver Tier</h5>
+                    <p></p>
+                </div>
+                <div class="gold">
+                    <h6>Gold Tier</h6>
+                    <p></p>
+                </div>
+            </div>
+            <h2 class="join-grid-2">Chamber Join Aplication Form</h2>
+            <div class="join-grid-3">
                 <div>
-                    <h5>Eternia Library</h5>
-                    <img src="images/sword.png" alt="A brightly colored sword">
-                    <p class="first-para">"I have the power!"</p>
-                    <p>###-###-####<br>-------<br>website.com</p>
+                    <form method="get" action="thankyou.html">
+                        <fieldset>
+                            <legend>Your Information</legend>
+                            <label class="required">First Name* <input type="text" name="fname" required></label>
+                            <label class="required">Last Name* <input type="text" name="lname" required></label>
+                            <label class="required">Email* <input type="email" name="email" required></label>
+                            <label class="required">Phone* <input type="tel" name="phone" required></label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Business Information</legend>
+                            <label class="required">Business Name* <input type="text" name="btitle" required></label>
+                            <label class="required">Your Business Title* (7 or more characters) <input type="text" name="title" pattern="A-Za-z -{7,}" required></label>
+                            <label>Business Description <textarea name="description" cols="23" rows="5"></textarea></label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Membership Tier</legend>
+                            <label>Non-Profit Tier <input type="radio" name="tier"></label>
+                            <label>Bronze Tier <input type="radio" name="tier"></label>
+                            <label>Silver Tier <input type="radio" name="tier"></label>
+                            <label>Gold Tier <input type="radio" name="tier"></label>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </main>
@@ -98,6 +103,5 @@
             <p>&copy; <span id="year"></span> St. George Chamber of Commerce | Kade B. Wilson | WDD 230 Project | <span id="last-time"></span></p> 
         </footer>
         <script src="scripts/commerce-app.js"></script>
-        <script src="scripts/windchill.js"></script>
     </body>
 </html>
