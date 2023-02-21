@@ -1,0 +1,39 @@
+table {
+    background-color: rgb(46, 45, 45);
+    margin: 300px auto;
+    font-size: 28px;
+    border: 3px solid rgb(46, 45, 45);
+}
+
+caption {
+    font-size: 32px;
+    background-color: rgb(7, 7, 113);
+    color: white;
+}
+
+thead tr {
+    background-color: rgb(110, 109, 109);
+    color: white;
+}
+
+tr {
+    background-color: rgb(196, 195, 195);
+    border: 1px solid rgb(46, 45, 45);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(191, 191, 244);
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+}
+
+.check {
+    color: rgb(0, 117, 0);
+}
+
+.x-mark {
+    color: red;
+}
