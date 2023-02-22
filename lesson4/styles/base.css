@@ -2,7 +2,7 @@ body {
     max-width: 960px;
     margin: 0 auto;
     font-family: 'Source Serif Pro', serif;
-    background-color: #b1a7a0;
+    background-color: #d8d8d8;
 }
 
 .pop-up {
@@ -303,10 +303,11 @@ main div {
 /* Join Page main css */
 
 
-.join-main h2 {
+.join-grid-2 {
     color: #ffe047;
     font-size: 30px;
     margin-top: 60px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -314,7 +315,7 @@ main div {
     border-radius: 10px;
 }
 
-.join-main h3, .join-main h4, .join-main h5, .join-main h6 {
+.join-main h2, .join-main h3, .join-main h4, .join-main h5 {
     margin: 10px 10px 10px 10px;
     box-shadow: none;
 }
@@ -322,6 +323,10 @@ main div {
 .join-grid-1, .join-grid-3, .join-grid-3 div {
     background-color: transparent;
     border: none;
+}
+
+.join-grid-1 {
+    margin: 20px;
 }
 
 .non-profit {
