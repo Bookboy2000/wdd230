@@ -310,8 +310,13 @@ main div {
     text-align: center;
 }
 
+.join-main div {
+    border-radius: 10px;
+}
+
 .join-main h3, .join-main h4, .join-main h5, .join-main h6 {
     margin: 10px 10px 10px 10px;
+    box-shadow: none;
 }
 
 .join-grid-1, .join-grid-3, .join-grid-3 div {
@@ -336,8 +341,15 @@ main div {
 }
 
 fieldset {
-    background-color: #9b7253;
-    border: none;
+    border: 7px solid #A6C0DE;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+legend {
+    font-size: 30px;
+    color: #ffe047;
+    text-shadow: 2px 2px black;
 }
 
 label {
