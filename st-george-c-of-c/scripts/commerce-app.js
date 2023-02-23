@@ -35,21 +35,14 @@ x.onclick = toggleNav;
 
 // Making a pop-up on top of screen on Mon-Tue
 
-const popUp = document.createElement('p');
-popUp.className = 'pop-up';
-const header = document.querySelector('header');
-let parent = header.parentNode;
-
-
-// 'August 19, 1975 23:15:30' <-- This can be used to test the function below to see if it checks against "day" properly
 const newday = new Date();
 const day = newday.getDay();
 
-popUp.textContent = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.';
-
+// 'August 19, 1975 23:15:30' <-- This can be used to test the function below to see if it checks against "day" properly
 function testDay() {
     if (day == '1' || day == '2') {
-        parent.insertBefore(popUp, header);
+        document.querySelector(".pop-up-stop").classList.add("pop-up-go");
+        document.querySelector(".pop-up-stop").classList.remove("pop-up-stop");
     } else {
     };
 };
