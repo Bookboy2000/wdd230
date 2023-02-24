@@ -25,6 +25,7 @@
                 <div class="burger-date test">
                     <ul id="menu">
                         <li><button id="hamburger"><span>&#9776;</span><span>X</span></button></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="discover.html">Discover</a></li>
                         <li><a href="#">Directory</a></li>
                         <li><a href="#">Join</a></li>
@@ -46,46 +47,69 @@
             <div class="join-grid-1">
                 <div class="non-profit">
                     <h2>Non-Profit Tier</h2>
-                    <p></p>
+                    <p>Price: FREE.<br>This Tier is for non-profit oraganizations only.</p>
+                    <ul>Benefits include:
+                        <li>Your business put into our directory</li>
+                        <li>Special trainings</li>
+                        <li>Access to our Discount Book</li>
+                    </ul>
                 </div>
                 <div class="bronze">
                     <h3>Bronze Tier</h3>
-                    <p></p>
+                    <p>Price: $20 Month.</p>
+                    <ul>Benefits include:
+                        <li>Your business put into our online directory</li>
+                        <li>Access to our Discount Book</li>
+                    </ul>
                 </div>
                 <div class="silver">
                     <h4>Silver Tier</h4>
-                    <p></p>
+                    <p>Price: $50 Month.</p>
+                    <ul>Benefits include:
+                        <li>Your business put into our online directory</li>
+                        <li>Access to our Discount Book</li>
+                        <li>Business trainings</li>
+                        <li>Free access to special events</li>
+                    </ul>
                 </div>
                 <div class="gold">
                     <h5>Gold Tier</h5>
-                    <p></p>
+                    <p>Price: $80 Month.</p>
+                    <ul>Benefits include:
+                        <li>Your business put into our online directory</li>
+                        <li>Access to our Discount Book</li>
+                        <li>Premium trainings</li>
+                        <li>Free access to all events</li>
+                        <li>Your business advertised on our Chamber of Commerce Home page</li>
+                    </ul>
                 </div>
             </div>
-            <h6 class="join-grid-2">Chamber Join Aplication Form</h6>
+            <h6 class="join-grid-2">Chamber Join Application Form</h6>
             <div class="join-grid-3">
                 <form method="get" action="thankyou.html">
                     <fieldset>
                         <legend>Your Information</legend>
                         <label class="required">First Name* <input type="text" name="fname" required></label>
                         <label class="required">Last Name* <input type="text" name="lname" required></label>
-                        <label class="required">Email* <input type="email" name="email" required></label>
-                        <label class="required">Phone* <input type="tel" name="phone" required></label>
+                        <label class="required">Email* <input type="email" name="email" placeholder="name.name@emailsite.com" required></label>
+                        <label class="required">Phone* <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="##########" required></label>
                     </fieldset>
 
                     <fieldset>
                         <legend>Business Information</legend>
                         <label class="required">Business Name* <input type="text" name="btitle" required></label>
-                        <label class="required">Your Business Title* (7 or more characters) <input type="text" name="title" pattern="A-Za-z -{7,}" required></label>
+                        <label class="required">Your Business Title* (7 or more characters) <input type="text" name="title" pattern="[A-Za-z-]{7,}" placeholder="e.g. President" required></label>
                         <label>Business Description <textarea name="description" cols="23" rows="5"></textarea></label>
                     </fieldset>
 
                     <fieldset>
                         <legend>Membership Tier</legend>
-                        <label class="radio-lbl"><input type="radio" name="tier"> Non-Profit Tier</label>
-                        <label class="radio-lbl"><input type="radio" name="tier"> Bronze Tier</label>
-                        <label class="radio-lbl"><input type="radio" name="tier"> Silver Tier</label>
-                        <label class="radio-lbl"><input type="radio" name="tier"> Gold Tier</label>
+                        <label class="radio-lbl"><input type="radio" name="tier" required> Non-Profit Tier</label>
+                        <label class="radio-lbl"><input type="radio" name="tier" required> Bronze Tier</label>
+                        <label class="radio-lbl"><input type="radio" name="tier" required> Silver Tier</label>
+                        <label class="radio-lbl"><input type="radio" name="tier" required> Gold Tier</label>
                     </fieldset>
+                    <input type="hidden" id="input-date" value>
                     <input type="submit" value="Apply to Chamber" class="apply-btn">
                 </form>
             </div>

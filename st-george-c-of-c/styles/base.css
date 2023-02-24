@@ -342,6 +342,11 @@ main div {
     padding: 0;
 }
 
+.join-grid-1 ul li {
+    padding-top: 7px;
+    list-style: square;
+}
+
 .join-grid-3 {
     padding: 0;
 }
@@ -350,16 +355,40 @@ main div {
     border: 7px solid rgb(57, 57, 57);
 }
 
+.non-profit ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 5px dotted rgb(57, 57, 57);
+}
+
 .bronze {
     border: 7px solid rgb(165, 82, 34);
+}
+
+.bronze ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 5px dotted rgb(165, 82, 34);
 }
 
 .silver {
     border: 7px solid #bfddff;
 }
 
+.silver ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 5px dotted #bfddff;
+}
+
 .gold {
     border: 7px solid gold;
+}
+
+.gold ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 5px dotted gold;
 }
 
 fieldset {
@@ -391,14 +420,21 @@ input {
     height: 44px;
 }
 
-input:required {
-    border: 1px solid red;
+input:required:invalid {
+    border: 3px solid red;
 }
 
 input[type="radio"] {
+    display: inline;
     width: 20px;
     height: 20px;
 }
+
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px gold;
+    width: 25px;
+    height: 25px;
+  }
 
 .apply-btn {
     margin: 20px;
@@ -411,6 +447,32 @@ input[type="radio"] {
 
 .apply-btn:hover {
     background-color: #0a4240;
+}
+
+/* Thank you page styling */
+
+.thank-you {
+    margin: 30px;
+}
+
+.thank-you h1 {
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+
+.thank-you p {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.thank-you-footer {
+    background-color: #d8d8d8;
+}
+
+.thank-you-footer p {
+    color: black;
 }
 
 
