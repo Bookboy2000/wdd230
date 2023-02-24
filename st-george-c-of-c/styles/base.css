@@ -272,7 +272,7 @@ main div {
     padding: 30px;
     margin: 30px auto;
     object-fit: scale-down;
-    background-color: #b1a7a0;
+    background-color: transparent;
     border: none;
 }
 
@@ -281,6 +281,10 @@ main div {
     color: #F7D52B;
     text-shadow: 3px 3px 5px black;
     text-align: center;
+    background-color: #9b7253;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 1.5em;
 }
 
 .discovery-main p {
@@ -314,6 +318,9 @@ main div {
     margin-top: 60px;
     margin-bottom: 10px;
     text-align: center;
+    background-color: #9b7253;
+    border: 2px solid black;
+    padding: 5px;
 }
 
 .join-main div {
@@ -332,6 +339,11 @@ main div {
 
 .join-grid-1 {
     margin: 20px;
+    padding: 0;
+}
+
+.join-grid-3 {
+    padding: 0;
 }
 
 .non-profit {
@@ -351,7 +363,7 @@ main div {
 }
 
 fieldset {
-    border: 7px solid #A6C0DE;
+    border: 7px solid #9b7253;
     border-radius: 10px;
     margin: 20px;
 }
@@ -359,7 +371,9 @@ fieldset {
 legend {
     font-size: 30px;
     color: #ffe047;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px 5px black;
+    background-color: #9b7253;
+    padding: 5px;
 }
 
 label {
@@ -369,10 +383,34 @@ label {
 
 input, textarea {
     background-color: rgb(200, 198, 198);
+    padding: 8px;
+    resize: none;
+    display: block;
+}
+input {
+    height: 44px;
 }
 
-.required input {
+input:required {
     border: 1px solid red;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+.apply-btn {
+    margin: 20px;
+    font-size: 25px;
+    background-color: #062726;
+    color: #F7D52B;
+    border: none;
+    border-radius: 10px;
+}
+
+.apply-btn:hover {
+    background-color: #0a4240;
 }
 
 
