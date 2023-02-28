@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    color: rgb(10, 151, 151);
+    background-color: black;
+}
+
+.cards {
+    text-align: center;
+    align-items: center;
+    background-color: rgb(179, 149, 110);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.cards img {
+    margin: 20px 20px;
+}
+
+.cards h2 {
+    font-size: 35px;
+}
+
+.cards p {
+    font-size: 20px;
+}
+
+section {
+    margin: 30px 20px;
+    background-color: rgb(10, 151, 151);
+    border: 5px solid green;
+}
