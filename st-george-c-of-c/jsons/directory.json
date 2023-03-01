@@ -1,0 +1,76 @@
+{
+    "businesses" : [
+        {
+            "name" : "Doofenshmirtz Evil Incorporated",
+            "url" : "images/doof.webp",
+            "address" : "9297 Polly Parkway, Danville, Tri-State Area",
+            "phone" : "(801)555-DOOF",
+            "website" : "drdoofevil.com",
+            "membership" : "Bronze"
+        },
+        {
+            "name" : "Mickey Mouse Clubhouse",
+            "url" : "images/mouse.webp",
+            "address" : "Main St USA, Disney Land",
+            "phone" : "(801)555-disney",
+            "website" : "disneynow.com",
+            "membership" : "Gold"
+        },
+        {
+            "name" : "Castle Grayskull",
+            "url" : "images/skull.webp",
+            "address" : "Skeletor St, Eternia",
+            "phone" : "(801)555-evil",
+            "website" : "skeletorrules.com",
+            "membership" : "Silver"
+        },
+        {
+            "name" : "Congress",
+            "url" : "images/congress.webp",
+            "address" : "50 Independence Ave SW Washington, DC",
+            "phone" : "(202) 224-3121",
+            "website" : "congress.gov",
+            "membership" : "Gold"
+        },
+        {
+            "name" : "ACME",
+            "url" : "images/rocket.webp",
+            "address" : "Looney St, Tv World",
+            "phone" : "(555) 555-ACME",
+            "website" : "ACME.com",
+            "membership" : "Silver"
+        },
+        {
+            "name" : "F.E.A.S.T.",
+            "url" : "images/hands.webp",
+            "address" : "Marvel St, Chinatown, New York City, New York",
+            "phone" : "(555) 555-FEAST",
+            "website" : "feast.com",
+            "membership" : "Non-Profit"
+        },
+        {
+            "name" : "Justice League of America",
+            "url" : "images/scale.webp",
+            "address" : "Watchtower, Space",
+            "phone" : "(555) 555-justice",
+            "website" : "jsa.com",
+            "membership" : "Non-Profit"
+        },
+        {
+            "name" : "Mystery Incorporated",
+            "url" : "images/glass.webp",
+            "address" : "N/A",
+            "phone" : "(555) 555-scoob",
+            "website" : "scoobydoobydoo.com",
+            "membership" : "Bronze"
+        },
+        {
+            "name" : "Fantastic Four",
+            "url" : "images/four.webp",
+            "address" : "Baxter Building",
+            "phone" : "(555) 555-4444",
+            "website" : "fantastic.com",
+            "membership" : "Gold"
+        }
+    ]
+}

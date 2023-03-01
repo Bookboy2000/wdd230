@@ -6,7 +6,7 @@ let today = Date.now();
 let oldDate = localStorage.getItem("oldDate");
 
 function compareDate() {
-    if (oldDate != null) {
+    if (oldDate >= 1) {
         let outcome = (oldDate - today) / 84600000;
         outcome = Math.abs(outcome);
         let rounded = Math.round(outcome);

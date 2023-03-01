@@ -76,15 +76,6 @@
         font-size: 30px;
     }
 
-    main button {
-        border: none;
-        background-color: #062726;
-        color: #F7D52B;
-        padding: 30px;
-        margin: 10px;
-        border-radius: 20px;
-    }
-
     
     main button:hover {
         background-color: #0a4240;
@@ -93,7 +84,7 @@
 
     /* Discover page main css */
     
-    .discovery-main h2 {
+    .discovery-main h2, .directory-main h2 {
         font-size: 30px;
     }
 

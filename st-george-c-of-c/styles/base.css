@@ -156,6 +156,14 @@ main div {
     object-fit: cover;
 } */
 
+main button {
+    border: none;
+    background-color: #062726;
+    color: #F7D52B;
+    margin: 10px;
+    border-radius: 20px;
+}
+
 .join {
     align-self: center;
     text-align: center;
@@ -475,6 +483,52 @@ input[type="radio"]:checked {
     color: black;
 }
 
+
+/* Directory page main css */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.directory-main div {
+    background-color: transparent;
+    border: none;
+    padding-top: 0;
+}
+
+.directory-main h2 {
+    color: #ffe047;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #9b7253;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.directory-main button {
+    width: 200px;
+    height: 100px;
+    font-size: 35px;
+}
+
+.directory-main section {
+    background-color: #9b7253;
+    padding: 30px;
+    margin: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.directory-main p {
+    font-size: 18px;
+    border-bottom: 2px solid black;
+}
+
+.grid-btn {
+    display: none;
+}
 
 /* Footer css */
 

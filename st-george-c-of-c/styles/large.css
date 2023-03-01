@@ -121,7 +121,7 @@
 
     /* Discover page main css */
 
-    .discovery-main h2 {
+    .discovery-main h2, .directory-main h2 {
         font-size: 35px;
     }
 
