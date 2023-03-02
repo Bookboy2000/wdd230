@@ -1,3 +1,5 @@
+// Creating the cards using data from directory.json
+
 const directoryUrl = 'jsons/directory.json';
 
 async function getDirectoryData() {
@@ -25,6 +27,13 @@ const displayDirectory = (businesses) => {
         phone.textContent = `Phone: ${business.phone}`
         website.textContent = `Website: ${business.website}`
 
+        // Adding a class to all items to make it easier to switch grid formats
+        h3.classList.add('name');
+        icon.classList.add('icon')
+        address.classList.add('address');
+        phone.classList.add('phone');
+        website.classList.add('website');
+
         icon.setAttribute('src', business.url);
         icon.setAttribute('alt', `Icon for ${business.name}`);
         icon.setAttribute('loading', 'lazy');
@@ -40,3 +49,33 @@ const displayDirectory = (businesses) => {
         
     });
 };
+
+
+// Making the list button chnage when you press it
+
+const gridBtn = document.querySelector('.grid-btn-off');
+const listBtn = document.querySelector('.list-btn');
+const layout = document.querySelector('.cards');
+
+listBtn.addEventListener('click', () => {
+    listBtn.classList.add('list-btn-off');
+    listBtn.classList.remove('list-btn');
+
+    gridBtn.classList.add('grid-btn');
+    gridBtn.classList.remove('grid-btn-off');
+
+    layout.classList.add('items');
+    layout.classList.remove('cards');
+});
+
+
+gridBtn.addEventListener('click', () => {
+    listBtn.classList.add('list-btn');
+    listBtn.classList.remove('list-btn-off');
+
+    gridBtn.classList.add('grid-btn-off');
+    gridBtn.classList.remove('grid-btn');
+
+    layout.classList.add('cards');
+    layout.classList.remove('items');
+});

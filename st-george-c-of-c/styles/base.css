@@ -489,11 +489,60 @@ input[type="radio"]:checked {
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    border: none;
+}
+
+.cards section {
+    margin: 10px;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.cards p {
+    font-size: 18px;
+    border-bottom: 2px solid black;
+}
+
+.directory-main .items {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 0;
+}
+
+.items section {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: none;  
+}
+
+.items section:nth-child(even) {
+    background-color: #d8d8d8;
+}
+
+.items img {
+    display: none;
+}
+
+.items h3 {
+    color: black;
+    text-shadow: none;
+    font-size: 16px;
+    margin: auto 0;
+    padding: 10px 0;
+}
+
+.items p {
+    border-bottom: none;
+    margin: auto 0;
+    font-size: 14px;
+    padding: 5px 0;
 }
 
 .directory-main div {
     background-color: transparent;
-    border: none;
     padding-top: 0;
 }
 
@@ -515,19 +564,21 @@ input[type="radio"]:checked {
 
 .directory-main section {
     background-color: #9b7253;
-    padding: 30px;
-    margin: 10px;
-    border: 2px solid black;
     text-align: center;
 }
 
-.directory-main p {
-    font-size: 18px;
-    border-bottom: 2px solid black;
+.grid-btn-off {
+    display: none;
+}
+.grid-btn {
+    display: block;
 }
 
-.grid-btn {
+.list-btn-off {
     display: none;
+}
+.list-btn {
+    display: block;
 }
 
 /* Footer css */

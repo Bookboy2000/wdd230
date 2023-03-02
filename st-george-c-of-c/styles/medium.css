@@ -93,6 +93,17 @@
     }
 
 
+    /* Directory page main css */
+
+    .items h3 {
+        font-size: 20px;
+    }
+    
+    .items p {
+        font-size: 16px;
+    }
+
+
     /* Main grid layout */
 
     .mid-layout {
