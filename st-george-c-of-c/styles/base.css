@@ -230,13 +230,14 @@ main button {
 }
 
 .weather img {
-    max-height: 95px;
-    max-width: 95px;
+    margin: auto;
+    max-width: 80px;
+    max-height: 80px;
     flex: auto;
 }
 
 .weather p {
-    margin: 15px 0px;
+    margin: 15px 10px;
     font-size: 22px;
     text-align: center;
     align-self: center;

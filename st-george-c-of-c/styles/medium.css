@@ -59,6 +59,10 @@
         flex-wrap: wrap;
     }
 
+    .weather p {
+        margin: 15px 20px;
+    }
+
     .weather-para {
         margin: 0;
         padding-top: 10px;
