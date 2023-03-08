@@ -26,18 +26,20 @@ function results(weather) {
     weatherIcon.setAttribute('alt', desc)
     description.innerHTML = desc
 
-    checkNum();
+    checkNum(weather);
 }
 
 function calculateChill(tempValue, speedValue) {
     windChill = parseInt(35.74 + 0.6215 * tempValue - 35.75 * speedValue ** 0.16 +0.4275 * tempValue * speedValue ** 0.16)
-    chill.textContent = `${windChill}&#8457;`
+    chill.innerHTML = `${windChill}&#8457;`
 }
-function checkNum() {
+function checkNum(weather) {
     let tempValue = parseInt(tempElement.textContent);
     let speedValue = parseInt(speed.textContent);
 
     if ((tempValue <= 50) && (speedValue > 3)) {
         calculateChill(tempValue, speedValue);
+    } else {
+        chill.innerHTML = `${weather.main.temp.toFixed(0)}&#8457;`;
     }
 }
