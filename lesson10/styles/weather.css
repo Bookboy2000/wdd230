@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(29, 28, 28);
+    text-align: center;
+}
+
+h1, h2 {
+    text-shadow: 5px 5px 5px rgb(206, 91, 206);
+}
+
+h1, h2, p, figcaption {
+    color: white;
+}
