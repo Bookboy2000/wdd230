@@ -1,6 +1,6 @@
 // Creating the cards using data from directory.json
 
-const directoryUrl = 'jsons/directory.json';
+const directoryUrl = './jsons/directory.json';
 
 async function getDirectoryData() {
     const response = await fetch(directoryUrl);

@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>St George Business Directory</title>
-        <meta name="description" content="Business Directory">
+        <title>Contact Us!</title>
+        <meta name="description" content="Contact Information">
         <link rel="stylesheet" href="styles/commerce-normalize.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/medium.css">
@@ -28,9 +28,9 @@
                         <li><button id="hamburger"><span>&#9776;</span><span>X</span></button></li>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="discover.html">Discover</a></li>
-                        <li><a href="#">Directory</a></li>
+                        <li><a href="directory.html">Directory</a></li>
                         <li><a href="join.html">Join</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                     <p id="current"></p>
                     <div class="social-links">
@@ -44,13 +44,27 @@
                 </div>
             </nav>
         </header>
-        <main class="directory-main">
-            <h2>Business Directory</h2>
-            <button class="list-btn">List</button>
-            <button class="grid-btn-off">Cards</button>
-            <div class="cards">
-
+        <main class="contact-main">
+            <h2>Contact Us!</h2>
+            <p class="speech">We value your needs and opinions. If you would like to ask us a question or provide feedback please contact us through our info here,
+                or stop by our office during our office hours listed below. Additionally, you can fill out the form below, and we will answer your
+                through your desired email.
+            </p>
+            <p>Phone: (###)###-###</p>
+            <p>Email: stgcoc@emailsite.com</p>
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d43753.63394297684!2d-113.58644861889822!3d37.097391590494986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1678900114242!5m2!1sen!2sus" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://goo.gl/maps/NVxhKkyKEiNX6WQU6">Our Location</a>
+                <p>Office hours:<br>Mon-Friday, 9am-5pm<br>Saturday, 12pm-5pm<br>Sunday, Closed</p>
             </div>
+            <fieldset class="contact-form">
+                <legend>Ask a Question</legend>
+                <label class="required">First Name* <input type="text" name="fName" required></label>
+                <label class="required">Last Name* <input type="text" name="lName" required></label>
+                <label class="required">Email* <input type="email" name="email" placeholder="name.name@emailsite.com" required></label>
+                <label>Question or Feedback <textarea name="description" cols="23" rows="5"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Ask Your Question" class="question-btn">
         </main>
         <footer>
             <div class="bottom-bar">
@@ -64,6 +78,5 @@
             <p>&copy; <span id="year"></span> St. George Chamber of Commerce | Kade B. Wilson | WDD 230 Project | <span id="last-time"></span></p> 
         </footer>
         <script src="scripts/commerce-app.js"></script>
-        <script src="scripts/directory.js"></script>
     </body>
 </html>

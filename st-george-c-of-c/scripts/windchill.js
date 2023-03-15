@@ -9,7 +9,6 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?q=saint george,ut,u
 async function fetchApi() {
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data);
         results(data);  
 }
 

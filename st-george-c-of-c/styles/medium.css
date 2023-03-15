@@ -110,6 +110,18 @@
     }
 
 
+    /* Contact page main css */
+
+    .contact-main h2 {
+        margin-top: 60px;
+    }
+
+    .contact-main .speech {
+        font-size: 20px;
+
+    }
+
+
     /* Main grid layout */
 
     .mid-layout {

@@ -3,7 +3,7 @@
         {
             "name" : "Doofenshmirtz Evil Incorporated",
             "url" : "images/doof.webp",
-            "address" : "9297 Polly Parkway, Danville, Tri-State Area",
+            "address" : "9297 Polly Parkway, Danville",
             "phone" : "(801)555-DOOF",
             "website" : "drdoofevil.com",
             "membership" : "Bronze"
@@ -43,7 +43,7 @@
         {
             "name" : "F.E.A.S.T.",
             "url" : "images/hands.webp",
-            "address" : "Marvel St, Chinatown, New York City, New York",
+            "address" : "Chinatown, New York City, New York",
             "phone" : "(555) 555-FEAST",
             "website" : "feast.com",
             "membership" : "Non-Profit"

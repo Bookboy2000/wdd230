@@ -144,8 +144,6 @@ main div {
     border: 2px solid black;
 }
 
-
-
 main button {
     border: none;
     background-color: #062726;
@@ -268,7 +266,7 @@ main button {
     margin: 15px;
 }
 
-.first-para {
+.spot-1-address, .spot-2-address {
     border-bottom: 1px solid black;
 }
 
@@ -279,7 +277,6 @@ main button {
     max-width: 560px;
     padding: 30px;
     margin: 30px auto;
-    object-fit: scale-down;
     background-color: transparent;
     border: none;
 }
@@ -297,7 +294,6 @@ main button {
 
 .discovery-main p {
     text-align: center;
-    font-size: 20px;
     margin: 5px;
 }
 
@@ -309,11 +305,8 @@ main button {
     width: 100%;
     max-width: 520px;
     max-height: 400px;
+    object-fit: scale-down;
     border: 20px double black;
-}
-
-.discovery-main p {
-    text-align: center;
 }
 
 
@@ -444,7 +437,7 @@ input[type="radio"]:checked {
     height: 25px;
   }
 
-.apply-btn {
+.apply-btn, .question-btn {
     margin: 20px;
     font-size: 25px;
     background-color: #062726;
@@ -453,7 +446,7 @@ input[type="radio"]:checked {
     border-radius: 10px;
 }
 
-.apply-btn:hover {
+.apply-btn:hover, .question-btn:hover {
     background-color: #0a4240;
 }
 
@@ -581,6 +574,73 @@ input[type="radio"]:checked {
 .list-btn {
     display: block;
 }
+
+
+/* Contact page main css */
+
+.contact-main {
+    text-align: center;
+}
+
+.contact-main h2 {
+    color: #ffe047;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #9b7253;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.contact-main .speech {
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.contact-main p {
+    font-size: 25px;
+    margin: 15px;
+}
+
+.location {
+    margin: 30px auto 30px auto;
+    max-width: fit-content;
+}
+
+.location p {
+    margin-bottom: 0;
+}
+
+.location a {
+    font-size: 25px;
+    background-color: #062726;
+    color: #F7D52B;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.location a:hover {
+    background-color: #0a4240;
+}
+
+iframe {
+    display: none;
+}
+
+.contact-form {
+    text-align: left;
+    max-width: fit-content;
+    margin: 50px auto;
+    margin-bottom: 0;
+}
+
+.question-btn {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
 
 /* Footer css */
 

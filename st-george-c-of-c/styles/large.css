@@ -92,8 +92,8 @@
     }
 
     .weather img {
-        max-width: 57px;
-        max-height: 57px;
+        max-width: 50px;
+        max-height: 50px;
     }
 
     .weather p {
@@ -104,6 +104,10 @@
 
     .weather .weather-para {
         margin: 0px;
+    }
+
+    #description {
+        margin: 0 5px;
     }
 
     .news {
@@ -163,11 +167,22 @@
     }
 
 
+    /* Contact page main css */
+
+    .location a {
+        display: none;
+    }
+    
+    iframe {
+        display: block;
+    }
+
+
     /* Main grid layout */
 
     .mid-layout {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1.2fr;
         grid-template-rows: 200px 200px 200px;
     }
 
