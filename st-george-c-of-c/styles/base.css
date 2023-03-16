@@ -273,7 +273,6 @@ main button {
 /* discovery page discovery css */
 
 .discovery-main div {
-    width: fit-content;
     max-width: 560px;
     padding: 30px;
     margin: 30px auto;
@@ -302,10 +301,10 @@ main button {
 }
 
 .discovery-main img {
+    margin: 0 auto;
     width: 100%;
     max-width: 520px;
     max-height: 400px;
-    object-fit: scale-down;
     border: 20px double black;
 }
 

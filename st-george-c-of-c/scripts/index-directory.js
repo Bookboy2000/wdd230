@@ -31,14 +31,11 @@ function getRandomInt() {
 const displaySpotlights = (businesses) => {
     spotInt1 = getRandomInt();
     spotInt2 = getRandomInt();
-    console.log(spotInt1, spotInt2);
 
     if (spotInt1 == spotInt2 || businesses[spotInt1].membership == "Bronze" || businesses[spotInt1].membership == "Non-Profit"
     || businesses[spotInt2].membership == "Bronze" || businesses[spotInt2].membership == "Non-Profit") {
         displaySpotlights(businesses);
     } else {
-
-        console.log(spotInt1, spotInt2);
         name1.textContent = businesses[spotInt1].name;
         address1.textContent = businesses[spotInt1].address;
         number1.textContent = businesses[spotInt1].phone;
@@ -57,4 +54,4 @@ const displaySpotlights = (businesses) => {
         img2.setAttribute('src', iconSrc2);
         img2.setAttribute('alt', `Icon for ${businesses[spotInt2].name}`);
     }
-}
+};

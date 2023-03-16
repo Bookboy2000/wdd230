@@ -9,14 +9,17 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?q=saint george,ut,u
 async function fetchApi() {
         const response = await fetch(url);
         const data = await response.json();
-        results(data);  
+        displayWeather(data);  
 }
 
 fetchApi();
 
-function results(weather) {
-    tempElement.innerHTML = `${weather.main.temp.toFixed(0)}&#8457;`;
-    speed.innerHTML = `${weather.wind.speed.toFixed(2)}mph`;
+function displayWeather(weather) {
+    tempValue = `${weather.main.temp.toFixed(0)}&#8457;`;
+    speedValue = `${weather.wind.speed.toFixed(2)}mph`;
+
+    tempElement.innerHTML = tempValue;
+    speed.innerHTML = speedValue
 
     const iconSrc = `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
     const desc = weather.weather[0].description;
@@ -25,20 +28,21 @@ function results(weather) {
     weatherIcon.setAttribute('alt', desc)
     description.innerHTML = desc
 
-    checkNum(weather);
+    displayWindchill(tempValue, speedValue);
 }
 
-function calculateChill(tempValue, speedValue) {
-    windChill = parseInt(35.74 + 0.6215 * tempValue - 35.75 * speedValue ** 0.16 +0.4275 * tempValue * speedValue ** 0.16)
-    chill.innerHTML = `${windChill}&#8457;`
-}
-function checkNum(weather) {
-    let tempValue = parseInt(tempElement.textContent);
-    let speedValue = parseInt(speed.textContent);
+function displayWindchill(tempValue, speedValue) {
+    tempValue = parseInt(tempValue);
+    speedValue = parseInt(speedValue);
 
     if ((tempValue <= 50) && (speedValue > 3)) {
         calculateChill(tempValue, speedValue);
     } else {
-        chill.innerHTML = `${weather.main.temp.toFixed(0)}&#8457;`;
-    }
-}
+        console.log(tempValue, speedValue)
+    };
+};
+
+function calculateChill(tempValue, speedValue) {
+    windChill = parseInt(35.74 + 0.6215 * tempValue - 35.75 * speedValue ** 0.16 +0.4275 * tempValue * speedValue ** 0.16)
+    chill.innerHTML = `Feels like:${windChill}&#8457;`;
+};
