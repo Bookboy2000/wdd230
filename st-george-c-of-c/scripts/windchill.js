@@ -15,7 +15,6 @@ async function fetchApi() {
 fetchApi();
 
 function displayWeather(weather) {
-    console.log(weather)
     tempValue = `${weather.main.temp.toFixed(0)}&#8457;`;
     speedValue = `${weather.wind.speed.toFixed(2)}mph`;
 
