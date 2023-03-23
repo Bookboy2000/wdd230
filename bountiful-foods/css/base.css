@@ -1,0 +1,19 @@
+/* Bountiful Foods base css */
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+}
+
+.cali-content img {
+    float: right;
+}
+
+.fresh-action img {
+    display: block;
+}
