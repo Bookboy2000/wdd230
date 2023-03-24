@@ -6,14 +6,38 @@ body {
     font-family: 'Merriweather', serif;
 }
 
+
+
 h1 {
     font-family: 'Courgette', cursive;
+    text-align: center;
+    font-size: 40px;
 }
 
-.cali-content img {
-    float: right;
+.header-imgs {
+    display: flex;
 }
 
-.fresh-action img {
-    display: block;
+.header-imgs img {
+    flex: 1 1 auto;
+    max-width: 50px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+}
+
+nav a {
+    flex: 1 1 auto;
+    margin: 10px;
+}
+
+.cali-content {
+    text-align: center;
+}
+
+.fresh-action {
+    text-align: center;
 }
