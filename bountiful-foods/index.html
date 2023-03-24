@@ -16,9 +16,16 @@
         <header>
             <h1>Bountiful Foods</h1>
             <div class="header-imgs">
-                <img src="images/facebook-icon-64px.png" alt="Facebook Icon" width="50" height="50">
-                <img src="images/instagram-icon-64px.png" alt="Instagram Icon" width="50" height="50">
-                <img src="images/linkedin-icon-64px.png" alt="LinkIn Icon" width="50" height="50">
+                <a href="https://www.facebook.com/">
+                    <img src="#" alt="Facebook Icon" width="50" height="50">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram-icon-64px.png" alt="Instagram Icon" width="50" height="50">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="images/linkedin-icon-64px.png" alt="LinkIn Icon" width="50" height="50">
+                </a>
+                
             </div>
             <nav>
                 <a href="index.html">Home</a>
@@ -29,7 +36,7 @@
         <main>
             <div class="cali-content">
                 <div class="orchard-img">
-                    <img src="images/orchard.webp" alt="test" width="400" height="265" loading="lazy">
+                    <img class="orchard" src="images/orchard.webp" alt="An orange orchard" width="480" height="318" loading="lazy">
                 </div>
                 <p>
                     Sum sociis natoque penatibus et magnis dis parturient montes, 
@@ -41,8 +48,8 @@
             </div>
             <div class="fresh-action">
                 <div class="fruit-imgs">
-                    <img src="images/fruit-drinks.webp" alt="test" width="400" height="270" loading="lazy">
-                    <img src="images/mango.webp" alt="test" width="400" height="341.66" loading="lazy">
+                    <img class="fruit-drinks" src="images/fruit-drinks.webp" alt="fruit drinks" width="480" height="324" loading="lazy">
+                    <img class="mango" src="images/mango.webp" alt="A mango" width="480" height="410" loading="lazy">
                 </div>
                 <div class="fresh-call">
                     <p>
@@ -52,27 +59,33 @@
                         fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
                         venenatis vitae, justo.
                     </p>
-                    <button>Make a Fresh Drink</button>
-                    <p class="drink-num">drink number</p>
+                    <a href="fresh.html"><button>Make a Fresh Drink!</button></a>
+                    <div class="drink-para">
+                        <p>Drinks you've made:<span id="drink-num"></span></p>
+                    </div>
                 </div>
             </div>
             <div class="cali-weather">
-                <img id="weather-icon" src="#" alt="">
-                <p>Temperature:<span id="temp"></span></p>
-                <p><span id="desc"></span></p>
-                <p>Humidity:<span id="humidity"></span></p>
-                <div>
-                    <img id="day-1" src="#" alt="">
-                    <p><span id="temp-day-1"></span></p>
+                <div class="current-weather">
+                    <img id="weather-icon" src="#" alt="#">
+                    <p><span id="desc">N/A</span></p>
+                    <p>Temperature: <span id="temp">N/A</span></p>
+                    <p>Humidity: <span id="humidity">N/A</span>%</p>
                 </div>
-                <div>
-                    <img id="day-2" src="#" alt="">
-                    <p><span id="temp-day-2"></span></p>
-                </div>
-                <div>
-                    <img id="day-3" src="#" alt="">
-                    <p><span id="temp-day-3"></span></p>
-                </div>
+                <div class="forcast">
+                    <div>
+                        <img id="day-1" src="#" alt="#">
+                        <p><span id="temp-day-1">day 1</span></p>
+                    </div>
+                    <div>
+                        <img id="day-2" src="#" alt="#">
+                        <p><span id="temp-day-2">day 2</span></p>
+                    </div>
+                    <div>
+                        <img id="day-3" src="#" alt="#">
+                        <p><span id="temp-day-3">day 3</span></p>
+                    </div>
+                </div>     
             </div>   
         </main>
         <footer>
@@ -85,7 +98,9 @@
                 <li>(555)555-5555</li>
                 <li>bountifulfoods@emailsite.com</li>
                 <li><a href="https://goo.gl/maps/W29414niqQLf1hNw8">Bountiful Foods Carlsbad Location</a></li>
+            </ul>
+            <p>&copy; St. George Chamber of Commerce | Kade B. Wilson | WDD 230 Project |</p>
         </footer>
+        <script src="javascript/home.js"></script>
     </body>
-
 </html>
