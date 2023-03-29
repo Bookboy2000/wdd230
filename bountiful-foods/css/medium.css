@@ -1,9 +1,12 @@
 @media only screen and (min-width: 35.5em) {
+
+    /* Bountiful Foods medium css */
+
     h1 {
         font-size: 50px;
     }
 
-    main p {
+    .home-main p {
         margin: 15px;
         margin-top: 25px;
     }
@@ -34,7 +37,7 @@
 
     /* Main Grid Styles */
 
-    main {
+    .home-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;

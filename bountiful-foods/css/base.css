@@ -48,7 +48,7 @@ nav {
     border: 2px solid #4b3b47;
 }
 
-main {
+.home-main {
     text-align: center;
 }
 
@@ -58,11 +58,11 @@ nav a {
     padding: 10px;
 }
 
-main p {
+.home-main p {
     margin: 5px 10px 15px;
 }
 
-main button {
+.home-main button {
     font-size: 20px;
     background-color: #4b3b47;
     color: #e0d8de;
@@ -70,7 +70,7 @@ main button {
     border-radius: 10px;
 }
 
-main button:hover {
+.home-main button:hover {
     background-color: #d56062;
     color: black;
 }

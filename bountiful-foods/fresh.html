@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bountiful Foods Fresh Mixer</title>
+        <meta name="description" content="Bountiful Foods Fresh page">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Merriweather&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Bountiful Foods</h1>
+            <div class="header-imgs">
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook-icon-64px.png" alt="Facebook Icon" width="50" height="50">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/instagram-icon-64px.png" alt="Instagram Icon" width="50" height="50">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="images/linkedin-icon-64px.png" alt="LinkIn Icon" width="50" height="50">
+                </a>
+                
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="fresh.html">Fresh</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main class="fresh-main">
+            <h2>Fresh Drink Mixer</h2>
+            <p>
+                Here you can make you own Fresh drink!
+                Simply fill out the form below and choose your favorite fruits,
+                and we will make it for you. There is also a special instructions area,
+                so that you can make your drink exactly how you like it. 
+            </p>
+            <div class="fresh-imgs">
+                <img src="images/apple.webp" alt="An apple">
+                <img src="images/fruit-party.webp" alt="Assorted fruits">
+            </div>
+            <p>Fields with a * are required</p>
+            <form method="dialog" action="#">
+                <fieldset>
+                    <legend>Make Your Fresh Drink!</legend>
+                    <label>Fruit One* 
+                        <select name="fruit1" id="fruit-1" required>
+                        </select>
+                    </label>
+                    <label>Fruit Two 
+                        <select name="fruit2" id="fruit-2">
+                        </select>
+                    </label>
+                    <label>Fruit Three 
+                        <select name="fruit3" id="fruit-3">
+                        </select>
+                    </label>
+                    <label>Special Instructions <textarea name="instructions" cols="30" rows="10"></textarea></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Info</legend>
+                    <label>First Name* <input type="text" name="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" required></label>
+                    <label>Email* <input type="email" name="email" required></label>
+                    <label>Phone* <input type="tel" name="phone" pattern="[0-9]{10}" required></label>
+                </fieldset>
+                <input type="submit" value="Create Your Drink!" class="drink-btn">
+            </form>
+            <div class="info-card">
+                <p>First Name:<span class="fname"></span></p>
+                <p>Email:<span class="email"></span></p>
+                <p>Phone:<span class="phone"></span></p>
+                <p>Fruit One:<span class="choice-1"></span></p>
+                <p>Fruit Two: <span class="choice-2"></span></p>
+                <p>Fruit Three:<span class="choice-3"></span></p>
+                <p>Spacial Instructions:<span class="instruct"></span></p>
+                <p>Date:<span class="order-date"></span></p>
+                <p>Carbs:<span class="carbs"></span></p>
+                <p>Protein:<span class="protein"></span></p>
+                <p>Fat:<span class="fat"></span></p>
+                <p>Sugar:<span class="sugar"></span></p>
+                <p>Calories:<span class="calories"></span></p>
+            </div>
+            
+        </main>
+        <footer>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="contact-info">
+                <li>(555)555-5555</li>
+                <li>bountifulfoods@emailsite.com</li>
+                <li><a href="https://goo.gl/maps/W29414niqQLf1hNw8">Bountiful Foods Carlsbad Location</a></li>
+            </ul>
+            <p>&copy; St. George Chamber of Commerce | Kade B. Wilson | WDD 230 Project</p>
+        </footer>
+        <script src="javascript/fresh.js"></script>
+    </body>
+</html>
