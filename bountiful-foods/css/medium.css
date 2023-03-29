@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 35.5em) {
     h1 {
         font-size: 50px;
     }
@@ -8,13 +8,52 @@
         margin-top: 25px;
     }
 
-    .cali-content img {
-        float: right;
-        margin: 15px;
-        margin-top: 0;
+    .orchard {
+        max-width: 280px;
+        max-height: 159px;
     }
 
-    .cali-content p {
-        text-align: left;
+    .fruit-drinks {
+        max-width: 280px;
+        max-height: 195px;
+    }
+
+    .mango {
+        display: inline;
+        max-width: 280px;
+        max-height: 265px;
+    }
+
+    .fresh-call p {
+        font-size: 18px;
+    }
+
+    footer p, footer ul li {
+        font-size: 17px;
+    }
+
+    /* Main Grid Styles */
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .orchard-para {
+        grid-column: 100%;
+        grid-row: 1/2;
+    }
+
+    .orchard-img {
+        grid-column: 100%;
+    }
+
+    .fruit-imgs {
+        grid-column: 1/2;
+    }
+
+    .cali-weather {
+        grid-column: 1/3;
     }
 }

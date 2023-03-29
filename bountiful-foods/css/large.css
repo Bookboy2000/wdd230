@@ -1,0 +1,44 @@
+@media only screen and (min-width: 56em) {
+    
+    .orchard, .fruit-drinks, .mango {
+        max-width: 432px;
+    }
+
+    .orchard {
+        max-height: 282px;
+    }
+
+    .orchard-para {
+        font-size: 20px;
+    }
+
+    .fruit-drinks {
+        max-height: 292px;
+    }
+
+    .mango {
+        max-height: 370px;
+    }
+
+    .cali-weather {
+        width: 800px;
+        justify-self: center;
+    }
+
+    main button {
+        font-size: 30px;
+        height: 150px;
+    }
+
+    .fresh-call p {
+        font-size: 20px;
+    }
+
+    .drink-para {
+        font-size: 20px;
+    }
+
+    .cali-weather p, .cali-weather span {
+        font-size: 20px;
+    }
+}
