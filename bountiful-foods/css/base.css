@@ -1,4 +1,4 @@
-/* Bountiful Foods base css */
+/* Bountiful Foods header css */
 
 body {
     max-width: 1000px;
@@ -48,14 +48,17 @@ nav {
     border: 2px solid #4b3b47;
 }
 
-.home-main {
-    text-align: center;
-}
-
 nav a {
     flex: 1 1 auto;
     margin: 10px;
     padding: 10px;
+}
+
+
+/* Index page main css */
+
+.home-main {
+    text-align: center;
 }
 
 .home-main p {
@@ -84,13 +87,13 @@ nav a {
 }
 
 .orchard {
-    max-width: 374px;
-    max-height: 248px;
+    max-width: 350px;
+    max-height: 225px;
 }
 
 .fruit-drinks {
-    max-width: 360px;
-    max-height: 243px;
+    max-width: 335px;
+    max-height: 220px;
 }
 
 .mango {
@@ -141,6 +144,61 @@ nav a {
     margin: 20px;
     border: 4px solid #d56062;
 }
+
+
+/* Fresh page main css */
+
+.fresh-main {
+    text-align: center;
+}
+
+.fruit-party img {
+    width: 343px;
+}
+
+.apple img {
+    display: none;
+}
+
+fieldset {
+    border: 5px solid #ecc30b;
+    border-radius: 15px;
+    text-align: left;
+}
+
+legend {
+    font-size: 20px;
+    text-shadow: 5px 5px 10px #d56062;
+}
+
+label {
+    margin-top: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+input, label, textarea {
+    display: block;
+    margin-left: 5px;
+}
+
+.info-card-gone {
+    display: none;
+}
+
+.info-card-here {
+    display: block;
+    background-color: #ecc30b;
+    text-align: center;
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 30px;
+}
+
+
+/* Footer styles css */
 
 footer {
     background-color: #f37748;

@@ -39,6 +39,14 @@ function buildOptions(fruits) {
     const drinkBtn = document.querySelector('.drink-btn');
 
     drinkBtn.addEventListener('click', () => {
+        if (document.getElementById('info-card').classList.contains('info-card-gone')) {
+            document.querySelector('.info-card-gone').classList.add('info-card-here');
+            document.querySelector('.info-card-gone').classList.remove('info-card-gone');
+        } else {
+        };
+        
+
+
         const fName = document.querySelector('.f-name');
         let paraName = document.querySelector('.para-name');
         paraName.textContent = fName.value;
