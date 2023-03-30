@@ -12,10 +12,6 @@ function buildOptions(fruits) {
     const selectElement1 = document.querySelector('#fruit-1');
     const selectElement2 = document.querySelector('#fruit-2');
     const selectElement3 = document.querySelector('#fruit-3');
-    let empty1 = document.createElement('option');
-    selectElement2.appendChild(empty1);
-    let empty2 = document.createElement('option');
-    selectElement3.appendChild(empty2);
 
     fruits.forEach((fruit) => {
         let option1 = document.createElement('option');
@@ -71,6 +67,10 @@ function buildOptions(fruits) {
         const fat = document.querySelector('.fat');
         const sugar = document.querySelector('.sugar');
         const calories = document.querySelector('.calories');
+
+        choiceList1 = [];
+        choiceList2 = [];
+        choiceList3 = [];
         
     
         fruits.forEach((fruit) => {
@@ -81,6 +81,7 @@ function buildOptions(fruits) {
                 const fat1 = fruit.nutritions.fat;
                 const sugar1 = fruit.nutritions.sugar;
                 const calories1 = fruit.nutritions.calories;
+                choiceList1.push(carb1, protein1, fat1, sugar1, calories1);
                 
             } else if (fruit.name == fruit2.value) {
                 choice2.innerHTML = fruit.name;
@@ -89,6 +90,7 @@ function buildOptions(fruits) {
                 const fat2 = fruit.nutritions.fat;
                 const sugar2 = fruit.nutritions.sugar;
                 const calories2 = fruit.nutritions.calories;
+                choiceList2.push(carb2, protein2, fat2, sugar2, calories2);
 
             } else if (fruit.name == fruit3.value) {
                 choice3.innerHTML = fruit.name;
@@ -97,8 +99,20 @@ function buildOptions(fruits) {
                 const fat3 = fruit.nutritions.fat;
                 const sugar3 = fruit.nutritions.sugar;
                 const calories3 = fruit.nutritions.calories;
+                choiceList3.push(carb3, protein3, fat3, sugar3, calories3);
             };
         });
+        const carbTotal = choiceList1[0] + choiceList2[0] + choiceList3[0];
+        const proteinTotal = choiceList1[1] + choiceList2[1] + choiceList3[1];
+        const fatTotal = choiceList1[2] + choiceList2[2] + choiceList3[2];
+        const sugarTotal = choiceList1[3] + choiceList2[3] + choiceList3[3];
+        const caloriesTotal = choiceList1[4] + choiceList2[4] + choiceList3[4];
+
+        carb.innerHTML = carbTotal.toFixed(2);
+        protein.innerHTML = proteinTotal.toFixed(2);
+        fat.innerHTML = fatTotal.toFixed(2);
+        sugar.innerHTML = sugarTotal.toFixed(2);
+        calories.innerHTML = caloriesTotal.toFixed(2);
     }); 
 };
 
