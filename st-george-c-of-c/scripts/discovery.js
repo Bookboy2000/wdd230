@@ -29,7 +29,6 @@ localStorage.setItem("oldDate", today);
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const loadImages = (image) => {
-    console.log(image)
     let dataSrc = image.getAttribute("data-src");
     image.setAttribute("src", dataSrc);
     image.onload = () => {

@@ -1,3 +1,6 @@
+
+
+
 url = "https://brotherblazzard.github.io/canvas-content/fruit.json"
 
 async function getFruitData() {
@@ -7,6 +10,11 @@ async function getFruitData() {
 };
 
 getFruitData();
+
+const orderDate = document.querySelector(".order-date");
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(now);
+orderDate.innerHTML = `<em>${fulldate}</em>`;
 
 function buildOptions(fruits) {
     const selectElement1 = document.querySelector('#fruit-1');
@@ -36,91 +44,106 @@ function buildOptions(fruits) {
         selectElement3.appendChild(option3);
     });
 
+    // Adding the values to the info card
     const drinkBtn = document.querySelector('.drink-btn');
 
     drinkBtn.addEventListener('click', () => {
-        if (document.getElementById('info-card').classList.contains('info-card-gone')) {
-            document.querySelector('.info-card-gone').classList.add('info-card-here');
-            document.querySelector('.info-card-gone').classList.remove('info-card-gone');
+        form = document.getElementById('drink-form');
+        if (form.reportValidity() != true) {
+            document.getElementById('info-card-message').classList.add('info-card-invalid');
+            document.querySelector('.info-card-valid').classList.remove('info-card-valid');
         } else {
-        };
-        
+            document.getElementById('info-card-message').classList.add('info-card-valid');
+            document.querySelector('.info-card-valid').classList.remove('info-card-invalid');
 
-
-        const fName = document.querySelector('.f-name');
-        let paraName = document.querySelector('.para-name');
-        paraName.textContent = fName.value;
-    
-        const email = document.querySelector('.email');
-        let paraEmail = document.querySelector('.para-email');
-        paraEmail.textContent = email.value;
-    
-        const phone = document.querySelector('.phone');
-        let paraPhone = document.querySelector('.para-phone');
-        paraPhone.textContent = phone.value;
-    
-        const instruct = document.querySelector('.instruct');
-        let paraInstruct = document.querySelector('.para-instruct');
-        paraInstruct.textContent = instruct.value;
-    
-        const fruit1 = document.querySelector('#fruit-1');
-        const fruit2 = document.querySelector('#fruit-2');
-        const fruit3 = document.querySelector('#fruit-3');
-        const choice1 = document.querySelector('.choice-1');
-        const choice2 = document.querySelector('.choice-2');
-        const choice3 = document.querySelector('.choice-3');
-        const date = document.querySelector('.order-date');
-        const carb = document.querySelector('.carbs');
-        const protein = document.querySelector('.protein');
-        const fat = document.querySelector('.fat');
-        const sugar = document.querySelector('.sugar');
-        const calories = document.querySelector('.calories');
-
-        choiceList1 = [];
-        choiceList2 = [];
-        choiceList3 = [];
-        
-    
-        fruits.forEach((fruit) => {
-            if (fruit.name == fruit1.value) {
-                choice1.innerHTML = fruit.name;
-                const carb1 = fruit.nutritions.carbohydrates;
-                const protein1 = fruit.nutritions.protein;
-                const fat1 = fruit.nutritions.fat;
-                const sugar1 = fruit.nutritions.sugar;
-                const calories1 = fruit.nutritions.calories;
-                choiceList1.push(carb1, protein1, fat1, sugar1, calories1);
-                
-            } else if (fruit.name == fruit2.value) {
-                choice2.innerHTML = fruit.name;
-                const carb2 = fruit.nutritions.carbohydrates;
-                const protein2 = fruit.nutritions.protein;
-                const fat2 = fruit.nutritions.fat;
-                const sugar2 = fruit.nutritions.sugar;
-                const calories2 = fruit.nutritions.calories;
-                choiceList2.push(carb2, protein2, fat2, sugar2, calories2);
-
-            } else if (fruit.name == fruit3.value) {
-                choice3.innerHTML = fruit.name;
-                const carb3 = fruit.nutritions.carbohydrates;
-                const protein3 = fruit.nutritions.protein;
-                const fat3 = fruit.nutritions.fat;
-                const sugar3 = fruit.nutritions.sugar;
-                const calories3 = fruit.nutritions.calories;
-                choiceList3.push(carb3, protein3, fat3, sugar3, calories3);
+            if (document.getElementById('info-card').classList.contains('info-card-gone')) {
+                document.querySelector('.info-card-gone').classList.add('info-card-here');
+                document.querySelector('.info-card-gone').classList.remove('info-card-gone');
+            } else {
             };
-        });
-        const carbTotal = choiceList1[0] + choiceList2[0] + choiceList3[0];
-        const proteinTotal = choiceList1[1] + choiceList2[1] + choiceList3[1];
-        const fatTotal = choiceList1[2] + choiceList2[2] + choiceList3[2];
-        const sugarTotal = choiceList1[3] + choiceList2[3] + choiceList3[3];
-        const caloriesTotal = choiceList1[4] + choiceList2[4] + choiceList3[4];
+    
+            numPress = localStorage.getItem("numPress");
+            
+            numPress++;
+    
+            localStorage.setItem("numPress", numPress.toString());
+    
+            const fName = document.querySelector('.f-name');
+            let paraName = document.querySelector('.para-name');
+            paraName.textContent = fName.value;
+        
+            const email = document.querySelector('.email');
+            let paraEmail = document.querySelector('.para-email');
+            paraEmail.textContent = email.value;
+        
+            const phone = document.querySelector('.phone');
+            let paraPhone = document.querySelector('.para-phone');
+            paraPhone.textContent = phone.value;
+        
+            const instruct = document.querySelector('.instruct');
+            let paraInstruct = document.querySelector('.para-instruct');
+            paraInstruct.textContent = instruct.value;
+        
+            const fruit1 = document.querySelector('#fruit-1');
+            const fruit2 = document.querySelector('#fruit-2');
+            const fruit3 = document.querySelector('#fruit-3');
+            const choice1 = document.querySelector('.choice-1');
+            const choice2 = document.querySelector('.choice-2');
+            const choice3 = document.querySelector('.choice-3');
+            const date = document.querySelector('.order-date');
+            const carb = document.querySelector('.carbs');
+            const protein = document.querySelector('.protein');
+            const fat = document.querySelector('.fat');
+            const sugar = document.querySelector('.sugar');
+            const calories = document.querySelector('.calories');
+    
+            choiceList1 = [];
+            choiceList2 = [];
+            choiceList3 = [];
+            
+        
+            fruits.forEach((fruit) => {
+                if (fruit.name == fruit1.value) {
+                    choice1.innerHTML = fruit.name;
+                    const carb1 = fruit.nutritions.carbohydrates;
+                    const protein1 = fruit.nutritions.protein;
+                    const fat1 = fruit.nutritions.fat;
+                    const sugar1 = fruit.nutritions.sugar;
+                    const calories1 = fruit.nutritions.calories;
+                    choiceList1.push(carb1, protein1, fat1, sugar1, calories1);
+                    
+                } else if (fruit.name == fruit2.value) {
+                    choice2.innerHTML = fruit.name;
+                    const carb2 = fruit.nutritions.carbohydrates;
+                    const protein2 = fruit.nutritions.protein;
+                    const fat2 = fruit.nutritions.fat;
+                    const sugar2 = fruit.nutritions.sugar;
+                    const calories2 = fruit.nutritions.calories;
+                    choiceList2.push(carb2, protein2, fat2, sugar2, calories2);
+    
+                } else if (fruit.name == fruit3.value) {
+                    choice3.innerHTML = fruit.name;
+                    const carb3 = fruit.nutritions.carbohydrates;
+                    const protein3 = fruit.nutritions.protein;
+                    const fat3 = fruit.nutritions.fat;
+                    const sugar3 = fruit.nutritions.sugar;
+                    const calories3 = fruit.nutritions.calories;
+                    choiceList3.push(carb3, protein3, fat3, sugar3, calories3);
+                };
+            });
+            const carbTotal = choiceList1[0] + choiceList2[0] + choiceList3[0];
+            const proteinTotal = choiceList1[1] + choiceList2[1] + choiceList3[1];
+            const fatTotal = choiceList1[2] + choiceList2[2] + choiceList3[2];
+            const sugarTotal = choiceList1[3] + choiceList2[3] + choiceList3[3];
+            const caloriesTotal = choiceList1[4] + choiceList2[4] + choiceList3[4];
 
-        carb.innerHTML = carbTotal.toFixed(2);
-        protein.innerHTML = proteinTotal.toFixed(2);
-        fat.innerHTML = fatTotal.toFixed(2);
-        sugar.innerHTML = sugarTotal.toFixed(2);
-        calories.innerHTML = caloriesTotal.toFixed(2);
+    
+            carb.innerHTML = carbTotal.toFixed(2);
+            protein.innerHTML = proteinTotal.toFixed(2);
+            fat.innerHTML = fatTotal.toFixed(2);
+            sugar.innerHTML = sugarTotal.toFixed(2);
+            calories.innerHTML = caloriesTotal.toFixed(2);
+        };
     }); 
 };
 

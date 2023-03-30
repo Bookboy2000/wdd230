@@ -34,22 +34,22 @@
             </nav>
         </header>
         <main class="fresh-main">
-            <h2>Fresh Drink Mixer</h2>
-            <p>
-                Here you can make you own Fresh drink!
-                Simply fill out the form below and choose your favorite fruits,
-                and we will make it for you. There is also a special instructions area,
-                so that you can make your drink exactly how you like it. 
-            </p>
+            <div class="fresh-intro">
+                <h2>Fresh Drink Mixer</h2>
+                <p>
+                    Here you can make you own Fresh drink!
+                    Simply fill out the form below and choose your favorite fruits,
+                    and we will make it for you. There is also a special instructions area,
+                    so that you can make your drink exactly how you like it. 
+                </p>
+            </div>
             <div class="apple">
                 <img src="images/apple.webp" alt="An apple">
             </div>
             <div class="fruit-party">
                 <img src="images/fruit-party.webp" alt="Assorted fruits">
             </div>
-            
-            <p>Fields with a * are required</p>
-            <form method="dialog" action="#">
+            <form method="dialog" action="#" id="drink-form">
                 <fieldset>
                     <legend>Make Your Fresh Drink!</legend>
                     <label>Fruit One* 
@@ -74,24 +74,36 @@
                     <label>Email* <input class="email" type="email" name="email" required></label>
                     <label>Phone* <input class="phone" type="tel" name="phone" pattern="[0-9]{10}" required></label>
                 </fieldset>
+                <p class="required-para">Fields with a * are required</p>
                 <input type="submit" value="Create Your Drink!" class="drink-btn">
             </form>
+            <div class="info-card-valid" id="info-card-message">
+                <p>Please input valid info into the above form!</p>
+            </div>
             <div class="info-card-gone" id="info-card">
-                <p>First Name: <span class="para-name"></span></p>
-                <p>Email: <span class="para-email"></span></p>
-                <p>Phone: <span class="para-phone"></span></p>
-                <p>Fruit One: <span class="choice-1"></span></p>
-                <p>Fruit Two: <span class="choice-2"></span></p>
-                <p>Fruit three: <span class="choice-3"></span></p>
-                <p>Spacial Instructions: <span class="para-instruct"></span></p>
-                <p>Carbs: <span class="carbs"></span></p>
-                <p>Protein: <span class="protein"></span></p>
-                <p>Fat: <span class="fat"></span></p>
-                <p>Sugar: <span class="sugar"></span></p>
-                <p>Calories: <span class="calories"></span></p>
+                <p class="order-info">Order Information</p>
+                <div id="personal-info">
+                    <p>First Name: <span class="para-name"></span></p>
+                    <p>Email: <span class="para-email"></span></p>
+                    <p>Phone: <span class="para-phone"></span></p>
+                </div>
+                <div class="fruit-info">
+                    <p>Fruit One: <span class="choice-1"></span></p>
+                    <p>Fruit Two: <span class="choice-2"></span></p>
+                    <p>Fruit three: <span class="choice-3"></span></p>
+                </div>
+                <div class="instruct-info">
+                    <p>Special Instructions: <span class="para-instruct">None</span></p>
+                </div>
+                <div class="drink-info">
+                    <p>Carbs: <span class="carbs"></span></p>
+                    <p>Protein: <span class="protein"></span></p>
+                    <p>Fat: <span class="fat"></span></p>
+                    <p>Sugar: <span class="sugar"></span></p>
+                    <p>Calories: <span class="calories"></span></p>
+                </div>
                 <p>Date: <span class="order-date"></span></p>
             </div>
-            
         </main>
         <footer>
             <ul class="footer-links">

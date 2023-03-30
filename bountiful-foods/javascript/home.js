@@ -13,6 +13,7 @@ const dayWeek2 = document.querySelector('#day-of-week-2');
 const dayImg3 = document.querySelector('#day-3');
 const dayTemp3 = document.querySelector('#temp-day-3');
 const dayWeek3 = document.querySelector('#day-of-week-3');
+const numDrink = document.getElementById('drink-num');
 
 currentUrl = 'https://api.openweathermap.org/data/2.5/weather?q=carlsbad,ca,us&appid=5928f7cf482059dc544f74fe665b00a2&units=imperial';
 forcastUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=oceanside,ca,us&appid=5928f7cf482059dc544f74fe665b00a2&units=imperial';
@@ -25,10 +26,10 @@ async function fetchApis() {
     const forcastData = await forcastResponse.json();
 
     display(currentData, forcastData);
+};
 
-    console.log(currentData);
-    console.log(forcastData);
-}
+const numPress = localStorage.getItem('numPress');
+numDrink.textContent = `${numPress}`;
 
 fetchApis()
 
