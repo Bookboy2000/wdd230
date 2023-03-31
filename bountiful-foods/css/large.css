@@ -1,6 +1,15 @@
 @media only screen and (min-width: 56em) {
     
-    /* Bountiful Foods large css */
+    /* Home main large css */
+
+    h1 {
+        font-size: 65px;
+    }
+
+    .header-imgs img {
+        max-width: 64px;
+        max-height: 64px;
+    }
 
     .orchard, .fruit-drinks, .mango {
         max-width: 432px;
@@ -42,5 +51,56 @@
 
     .cali-weather p, .cali-weather span {
         font-size: 20px;
+    }
+
+
+    /* Fresh main grid css */
+
+    .fresh-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .apple img {
+        display: inline;
+        max-width: 300px;
+        max-height: 200px;
+        border: 5px solid #d56062;
+    }
+
+    .fruit-party img {
+        max-width: 310px;
+        max-height: 210px;
+    }
+
+    .apple {
+        grid-column: 3/4;
+        margin: auto 0 auto 0;
+    }
+
+    .fruit-party {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: auto 0 auto 0;
+    }
+
+    .fresh-intro {
+        grid-column: 2/3;
+    }
+
+    #info-card-message {
+        grid-column: 1/4;
+    }
+
+    #drink-form {
+        grid-column: 1/4;
+    }
+
+    .drink-btn {
+        font-size: 30px;
+    }
+
+    .info-card-here {
+        grid-column: 1/4;
     }
 }
