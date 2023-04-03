@@ -93,4 +93,36 @@
     .info-card-here div p {
         font-size: 20px;
     }
+
+    
+    /* contact page css */
+
+    .contact-main p {
+        font-size: 20px;
+    }
+
+    .contact-main h2, .contact-main h3 {
+        font-size: 28px;
+    }
+
+
+    /* footer styles */
+
+    .footer-content {
+        display: flex;
+    }
+
+    .footer-content ul {
+        flex: 1 1 auto;
+        align-self: center;
+    }
+
+    .footer-content ul li {
+        margin: 8px;
+        font-size: 20px;
+    }
+
+    .footer-links {
+        display: block;
+    }
 }

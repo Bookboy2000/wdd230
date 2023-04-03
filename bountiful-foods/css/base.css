@@ -315,6 +315,47 @@ fieldset textarea {
 }
 
 
+/* contact page main css */
+
+.contact-main {
+    text-align: center;
+}
+
+.about {
+    border-bottom: 5px solid #4b3b47;
+}
+
+.about h2 {
+    margin: 28px 0;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px;
+}
+
+.about img {
+    max-width: 383px;
+    max-height: 267px;
+    padding: 10px 0 10px 0;
+}
+
+.contact {
+    margin-top: 30px;
+}
+
+.contact h3 {
+    font-size: 24px;
+}
+
+iframe {
+    max-width: 383px;
+    max-height: 267px;
+    margin-bottom: 30px;
+}
+
+
 /* Footer styles css */
 
 footer {

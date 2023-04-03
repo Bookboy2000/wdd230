@@ -103,4 +103,27 @@
     .info-card-here {
         grid-column: 1/4;
     }
+
+
+    /* contact page main css */
+
+    .contact-main {
+        display: flex;
+    }
+
+    .contact-main div {
+        flex: 1 1 auto;
+    }
+
+    .contact {
+        margin-top: 0;
+    }
+
+
+    /* footer styles */
+
+    .footer-content ul li {
+        font-size: 22px;
+        margin: 10px;
+    }
 }
