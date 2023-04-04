@@ -116,8 +116,31 @@
     }
 
     .contact {
-        margin-top: 0;
+        margin: 20px
     }
+
+    iframe {
+        max-width: 400px;
+    }
+
+    .about {
+        border-bottom: none;
+        padding-right: 20px;
+        border-right: 5px solid #4b3b47;
+        margin: 20px 0 20px 20px;
+        max-width: 500px;
+    }
+
+    .about img {
+        max-width: 390px;
+        max-height: 275px;
+    }
+
+    .about p {
+        margin: 0;
+        font-size: 18px;
+    }
+
 
 
     /* footer styles */

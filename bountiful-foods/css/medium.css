@@ -105,6 +105,11 @@
         font-size: 28px;
     }
 
+    .about img {
+        max-width: none;
+        max-height: none;
+    }
+
 
     /* footer styles */
 
