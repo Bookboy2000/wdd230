@@ -67,7 +67,11 @@
                         <label>Email*<input type="email" name="email" required></label>
                         <label>Question*<textarea name="question" cols="30" rows="10"></textarea></label>
                     </fieldset>
-                </form> 
+                    <input type="submit" value="Ask your Question" class="question-btn">
+                </form>
+                <div class="question-valid" id="question-message">
+                    <p>Please input valid info into the above form!</p>
+                </div>
             </div>  
         </main>
         <footer>
@@ -84,6 +88,7 @@
                     <li><a href="https://en.wikipedia.org/wiki/Carlsbad,_California">Resource: Carlsbad wikipedia</a></li> 
                 </ul>
             </div>
+            <p>Last Modified: <span class="last-mod"></span></p>
             <p>&copy; St. George Chamber of Commerce | Kade B. Wilson | WDD 230 Project</p>
         </footer>
         <script src="javascript/contact.js"></script>

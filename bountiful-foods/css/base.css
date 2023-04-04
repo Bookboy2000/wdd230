@@ -225,13 +225,18 @@ fieldset textarea {
     padding: 10px;
 }
 
-.drink-btn {
+.drink-btn, .question-btn {
     font-size: 20px;
     background-color: #4b3b47;
     color: #e0d8de;
     padding: 30px;
     border-radius: 10px; 
     margin: 0 auto;
+}
+
+.drink-btn:hover, .question-btn:hover {
+    background-color: #d56062;
+    color: black;
 }
 
 .info-card-valid {
@@ -347,6 +352,10 @@ fieldset textarea {
 
 .contact h3 {
     font-size: 24px;
+}
+
+.question-btn {
+    margin-top: 20px;
 }
 
 
