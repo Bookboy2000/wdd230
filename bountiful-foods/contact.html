@@ -30,7 +30,7 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="fresh.html">Fresh</a>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html">About Us</a>
             </nav>
         </header>
         <main class="contact-main">
@@ -59,7 +59,7 @@
                 <p>(555)555-5555</p>
                 <p>bountifulfoods@emailsite.com</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51915.79558657185!2d-117.35520031123004!3d33.16647836362853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1680545755132!5m2!1sen!2sus" width="460" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <form action="#">
+                <form method="dialog" action="#" id="question-form">
                     <fieldset>
                         <legend>Ask a Question!</legend>
                         <label>First Name*<input type="text" name="fname" required></label>
@@ -69,8 +69,11 @@
                     </fieldset>
                     <input type="submit" value="Ask your Question" class="question-btn">
                 </form>
-                <div class="question-valid" id="question-message">
+                <div class="question-valid" id="question-bad">
                     <p>Please input valid info into the above form!</p>
+                </div>
+                <div class="question-gone" id="question-good">
+                    <p>Your question has been sent!</p>
                 </div>
             </div>  
         </main>
@@ -79,7 +82,7 @@
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="fresh.html">Fresh</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">About Us</a></li>
                 </ul>
                 <ul class="contact-info">
                     <li>(555)555-5555</li>

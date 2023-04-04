@@ -35,10 +35,7 @@
     .fresh-call p {
         font-size: 18px;
     }
-
-    footer p, footer ul li {
-        font-size: 17px;
-    }
+ 
 
     /* Main Home Grid Styles */
 
@@ -105,6 +102,10 @@
         font-size: 28px;
     }
 
+    iframe {
+        max-width: none;
+    }
+
     .about img {
         max-width: none;
         max-height: none;
@@ -129,5 +130,13 @@
 
     .footer-links {
         display: block;
+    }
+
+    footer ul li {
+        font-size: 17px;
+    }
+
+    footer p {
+        font-size: 15px;
     }
 }

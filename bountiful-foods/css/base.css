@@ -225,24 +225,6 @@ fieldset textarea {
     padding: 10px;
 }
 
-.drink-btn, .question-btn {
-    font-size: 20px;
-    background-color: #4b3b47;
-    color: #e0d8de;
-    padding: 30px;
-    border-radius: 10px; 
-    margin: 0 auto;
-}
-
-.drink-btn:hover, .question-btn:hover {
-    background-color: #d56062;
-    color: black;
-}
-
-.info-card-valid {
-    display: none;
-}
-
 .info-card-invalid {
     display: block;
     background-color: #ecc30b;
@@ -320,6 +302,46 @@ fieldset textarea {
 }
 
 
+/* Buttons and pop ups on fresh and contact */
+
+.drink-btn, .question-btn {
+    font-size: 20px;
+    background-color: #4b3b47;
+    color: #e0d8de;
+    padding: 30px;
+    border-radius: 10px; 
+    margin: 0 auto;
+}
+
+.drink-btn:hover, .question-btn:hover {
+    background-color: #d56062;
+    color: black;
+}
+
+.info-card-valid, .question-valid {
+    display: none;
+}
+
+.info-card-invalid, .question-invalid {
+    display: block;
+    background-color: #ecc30b;
+    border: 5px solid #d56062;
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+.question-gone {
+    display: none;
+}
+
+.question-here {
+    display: block;
+    background-color: #189d21;
+    border: 5px solid #d56062;
+    max-width: 80%;
+    margin: 30px auto;
+}
+
 /* contact page main css */
 
 .contact-main {
@@ -352,6 +374,10 @@ fieldset textarea {
 
 .contact h3 {
     font-size: 24px;
+}
+
+iframe {
+    max-width: 360px;
 }
 
 .question-btn {
@@ -389,4 +415,5 @@ footer ul li {
 footer p {
     margin: 0;
     padding-bottom: 5px;
+    font-size: 14px;
 }
