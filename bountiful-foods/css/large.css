@@ -36,8 +36,8 @@
         justify-self: center;
     }
 
-    main button {
-        font-size: 30px;
+    .home-main button {
+        font-size: 27px;
         height: 150px;
     }
 

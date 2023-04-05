@@ -46,12 +46,7 @@
     }
 
     .orchard-para {
-        grid-column: 100%;
         grid-row: 1/2;
-    }
-
-    .orchard-img {
-        grid-column: 100%;
     }
 
     .fruit-imgs {

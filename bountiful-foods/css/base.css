@@ -101,6 +101,10 @@ nav a {
     max-height: 220px;
 }
 
+.home-main .fresh-call p {
+    margin-bottom: 25px;
+}
+
 .mango {
     display: none;
 }
@@ -248,7 +252,7 @@ fieldset textarea {
     text-align: center;
     padding: 20px;
     padding-top: 10px;
-    margin: 30px auto 0 auto;
+    margin: 30px auto 30px auto;
     max-width: 800px;
 }
 
